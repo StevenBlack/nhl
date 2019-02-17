@@ -1,10 +1,11 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
 	"time"
-
-	"github.com/thedevsaddam/gojsonq"
+	// "github.com/thedevsaddam/gojsonq"
 )
 
 func main() {
@@ -82,12 +83,33 @@ func main() {
 		} `json:"records"`
 	}
 
-	jq := gojsonq.New().File("./data.json")
+	data, err := ioutil.ReadFile("./data.json")
+	if err != nil {
+		fmt.Print(err)
+	}
 
-	// res := jq.From("records.[0].teamRecords").Get()
-	// fmt.Println(res)
+	var stats Stats
+	err = json.Unmarshal(data, &stats)
+	if err != nil {
+		fmt.Println("error:", err)
+	}
 
-	res2 := jq.From("records.[].teamRecords.[3].team.name").Get()
-	fmt.Println(res2)
+	for _, r := range stats.Records {
+		fmt.Println(r.Conference.Name, r.Division.Name)
+		for _, tr := range r.TeamRecords {
+			fmt.Printf("%-25v", tr.Team.Name)
+			fmt.Println(tr.LeagueRecord.Wins - tr.LeagueRecord.Losses)
+		}
+		fmt.Println(" ")
+
+	}
+
+	// jq := gojsonq.New().File("./data.json")
+
+	// // res := jq.From("records.[0].teamRecords").Get()
+	// // fmt.Println(res)
+
+	// res2 := jq.From("records.[].teamRecords.[3].team.name").Get()
+	// fmt.Println(res2)
 
 }
