@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"sort"
 	"time"
 	// "github.com/thedevsaddam/gojsonq"
 )
@@ -92,6 +93,12 @@ type Team struct {
 	WL10       int
 }
 
+type ByLeague []Team
+
+func (c ByLeague) Len() int           { return len(c) }
+func (c ByLeague) Swap(i, j int)      { c[i], c[j] = c[j], c[i] }
+func (c ByLeague) Less(i, j int) bool { return c[i].Wl > c[j].Wl }
+
 func main() {
 	fmt.Println("NHL Standings Interpreter")
 
@@ -126,5 +133,18 @@ func main() {
 		fmt.Println(" ")
 	}
 
-	fmt.Print(standings)
+	sort.Sort(ByLeague(standings))
+
+	fmt.Println("NHL League Standings")
+
+	ln := 0
+	for _, s := range standings {
+		ln = ln + 1
+		fmt.Printf("%-3v", ln)
+		fmt.Printf("%-25v", s.Team)
+		fmt.Println(s.Wl)
+	}
+
+	// fmt.Print(standings)
+
 }
