@@ -6,7 +6,6 @@ import (
 	"io/ioutil"
 	"sort"
 	"time"
-	// "github.com/thedevsaddam/gojsonq"
 )
 
 type Stats struct {
@@ -118,17 +117,34 @@ func main() {
 
 	for _, r := range stats.Records {
 		fmt.Println(r.Conference.Name, r.Division.Name)
+		lnsr := 0
 		for _, tr := range r.TeamRecords {
+			lnsr = lnsr + 1
+			lr := tr.LeagueRecord
+			overallr := tr.Records.OverallRecords
+			wl10 := 0
+			for _, v := range overallr {
+				if v.Type == "lastTen" {
+					wl10 = v.Wins - v.Losses
+				}
+			}
 			team := Team{
 				Conference: r.Conference.Name,
 				Division:   r.Division.Name,
 				Team:       tr.Team.Name,
-				W:          tr.LeagueRecord.Wins,
-				L:          tr.LeagueRecord.Losses,
-				Wl:         (tr.LeagueRecord.Wins - tr.LeagueRecord.Losses)}
+				W:          lr.Wins,
+				L:          lr.Losses,
+				Wl:         (lr.Wins - lr.Losses),
+				WL10:       wl10}
 			standings = append(standings, team)
+			fmt.Printf("%1d", lnsr)
+			fmt.Print(" ")
 			fmt.Printf("%-25v", tr.Team.Name)
-			fmt.Println(tr.LeagueRecord.Wins - tr.LeagueRecord.Losses)
+			fmt.Print(" ")
+			fmt.Printf("%4d", lr.Wins-lr.Losses)
+			fmt.Print(" ")
+			fmt.Printf("%4d", wl10)
+			fmt.Println()
 		}
 		fmt.Println(" ")
 	}
@@ -140,9 +156,14 @@ func main() {
 	ln := 0
 	for _, s := range standings {
 		ln = ln + 1
-		fmt.Printf("%-3v", ln)
+		fmt.Printf("%2d", ln)
+		fmt.Print(" ")
 		fmt.Printf("%-25v", s.Team)
-		fmt.Println(s.Wl)
+		fmt.Print(" ")
+		fmt.Printf("%4d", s.Wl)
+		fmt.Print(" ")
+		fmt.Printf("%4d", s.WL10)
+		fmt.Println()
 	}
 
 	// fmt.Print(standings)
