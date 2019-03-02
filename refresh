@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Refresh data.json from a reliable source.
+
+curl -o data.json https://statsapi.web.nhl.com/api/v1/standings?expand=standings.record
