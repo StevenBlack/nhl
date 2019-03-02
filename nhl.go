@@ -92,15 +92,41 @@ type Team struct {
 	WL10       int
 }
 
-type ByLeague []Team
+type ByWl []Team
 
-func (c ByLeague) Len() int           { return len(c) }
-func (c ByLeague) Swap(i, j int)      { c[i], c[j] = c[j], c[i] }
-func (c ByLeague) Less(i, j int) bool { return c[i].Wl > c[j].Wl }
+func (c ByWl) Len() int           { return len(c) }
+func (c ByWl) Swap(i, j int)      { c[i], c[j] = c[j], c[i] }
+func (c ByWl) Less(i, j int) bool { return c[i].Wl > c[j].Wl }
+
+type ByDivision []Team
+
+func (c ByDivision) Len() int      { return len(c) }
+func (c ByDivision) Swap(i, j int) { c[i], c[j] = c[j], c[i] }
+func (c ByDivision) Less(i, j int) bool {
+	if c[i].Conference == c[j].Conference {
+		if c[i].Division == c[j].Division {
+			return c[i].Wl > c[j].Wl
+		} else {
+			return c[i].Division < c[j].Division
+		}
+	} else {
+		return c[i].Conference < c[j].Conference
+	}
+}
+
+type ByConference []Team
+
+func (c ByConference) Len() int      { return len(c) }
+func (c ByConference) Swap(i, j int) { c[i], c[j] = c[j], c[i] }
+func (c ByConference) Less(i, j int) bool {
+	if c[i].Conference == c[j].Conference {
+		return c[i].Wl > c[j].Wl
+	} else {
+		return c[i].Conference < c[j].Conference
+	}
+}
 
 func main() {
-	fmt.Println("NHL Standings Interpreter")
-
 	data, err := ioutil.ReadFile("./data.json")
 	if err != nil {
 		fmt.Print(err)
@@ -116,7 +142,7 @@ func main() {
 	standings := make([]Team, 0)
 
 	for _, r := range stats.Records {
-		fmt.Println(r.Conference.Name, r.Division.Name)
+		// fmt.Println(r.Conference.Name, r.Division.Name)
 		lnsr := 0
 		for _, tr := range r.TeamRecords {
 			lnsr = lnsr + 1
@@ -137,23 +163,69 @@ func main() {
 				Wl:         (lr.Wins - lr.Losses),
 				WL10:       wl10}
 			standings = append(standings, team)
-			fmt.Printf("%1d", lnsr)
-			fmt.Print(" ")
-			fmt.Printf("%-25v", tr.Team.Name)
-			fmt.Print(" ")
-			fmt.Printf("%4d", lr.Wins-lr.Losses)
-			fmt.Print(" ")
-			fmt.Printf("%4d", wl10)
-			fmt.Println()
 		}
-		fmt.Println(" ")
 	}
 
-	sort.Sort(ByLeague(standings))
+	sort.Sort(ByDivision(standings))
 
+	fmt.Println("NHL Division Standings")
+	conf := ""
+	div := ""
+	ln := 0
+	for _, s := range standings {
+		if conf != s.Conference {
+			conf = s.Conference
+			ln = 0
+			fmt.Println()
+			fmt.Println(s.Conference, "Conference")
+		}
+		if div != s.Division {
+			div = s.Division
+			ln = 0
+			fmt.Println()
+			fmt.Println(s.Division, "Division")
+		}
+		ln = ln + 1
+		fmt.Printf("%2d", ln)
+		fmt.Print(" ")
+		fmt.Printf("%-25v", s.Team)
+		fmt.Print(" ")
+		fmt.Printf("%4d", s.Wl)
+		fmt.Print(" ")
+		fmt.Printf("%4d", s.WL10)
+		fmt.Println()
+	}
+
+	sort.Sort(ByConference(standings))
+
+	fmt.Println()
+	fmt.Println("NHL Conference Standings")
+	conf = ""
+	ln = 0
+	for _, s := range standings {
+		if conf != s.Conference {
+			conf = s.Conference
+			ln = 0
+			fmt.Println()
+			fmt.Println(s.Conference, "Conference")
+		}
+		ln = ln + 1
+		fmt.Printf("%2d", ln)
+		fmt.Print(" ")
+		fmt.Printf("%-25v", s.Team)
+		fmt.Print(" ")
+		fmt.Printf("%4d", s.Wl)
+		fmt.Print(" ")
+		fmt.Printf("%4d", s.WL10)
+		fmt.Println()
+	}
+
+	sort.Sort(ByWl(standings))
+
+	fmt.Println()
 	fmt.Println("NHL League Standings")
 
-	ln := 0
+	ln = 0
 	for _, s := range standings {
 		ln = ln + 1
 		fmt.Printf("%2d", ln)
