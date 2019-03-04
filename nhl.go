@@ -90,6 +90,8 @@ type Team struct {
 	W10        int
 	L10        int
 	WL10       int
+	GP         int
+	GD         int
 }
 
 type ByWl []Team
@@ -161,7 +163,9 @@ func main() {
 				W:          lr.Wins,
 				L:          lr.Losses,
 				Wl:         (lr.Wins - lr.Losses),
-				WL10:       wl10}
+				WL10:       wl10,
+				GP:         tr.GamesPlayed,
+				GD:         tr.GoalsScored - tr.GoalsAgainst}
 			standings = append(standings, team)
 		}
 	}
@@ -193,6 +197,8 @@ func main() {
 		fmt.Printf("%4d", s.Wl)
 		fmt.Print(" ")
 		fmt.Printf("%4d", s.WL10)
+		fmt.Print(" ")
+		fmt.Printf("%5d", s.GD)
 		fmt.Println()
 	}
 
@@ -217,6 +223,8 @@ func main() {
 		fmt.Printf("%4d", s.Wl)
 		fmt.Print(" ")
 		fmt.Printf("%4d", s.WL10)
+		fmt.Print(" ")
+		fmt.Printf("%5d", s.GD)
 		fmt.Println()
 	}
 
@@ -235,6 +243,8 @@ func main() {
 		fmt.Printf("%4d", s.Wl)
 		fmt.Print(" ")
 		fmt.Printf("%4d", s.WL10)
+		fmt.Print(" ")
+		fmt.Printf("%5d", s.GD)
 		fmt.Println()
 	}
 
