@@ -96,9 +96,19 @@ type Team struct {
 
 type ByWl []Team
 
-func (c ByWl) Len() int           { return len(c) }
-func (c ByWl) Swap(i, j int)      { c[i], c[j] = c[j], c[i] }
-func (c ByWl) Less(i, j int) bool { return c[i].Wl > c[j].Wl }
+func (c ByWl) Len() int      { return len(c) }
+func (c ByWl) Swap(i, j int) { c[i], c[j] = c[j], c[i] }
+func (c ByWl) Less(i, j int) bool {
+	if c[i].Wl == c[j].Wl {
+		if c[i].GP == c[j].GP {
+			return c[i].GD > c[j].GD
+		} else {
+			return c[i].GP < c[j].GP
+		}
+	} else {
+		return c[i].Wl > c[j].Wl
+	}
+}
 
 type ByDivision []Team
 
@@ -107,7 +117,15 @@ func (c ByDivision) Swap(i, j int) { c[i], c[j] = c[j], c[i] }
 func (c ByDivision) Less(i, j int) bool {
 	if c[i].Conference == c[j].Conference {
 		if c[i].Division == c[j].Division {
-			return c[i].Wl > c[j].Wl
+			if c[i].Wl == c[j].Wl {
+				if c[i].GP == c[j].GP {
+					return c[i].GD > c[j].GD
+				} else {
+					return c[i].GP < c[j].GP
+				}
+			} else {
+				return c[i].Wl > c[j].Wl
+			}
 		} else {
 			return c[i].Division < c[j].Division
 		}
@@ -122,7 +140,15 @@ func (c ByConference) Len() int      { return len(c) }
 func (c ByConference) Swap(i, j int) { c[i], c[j] = c[j], c[i] }
 func (c ByConference) Less(i, j int) bool {
 	if c[i].Conference == c[j].Conference {
-		return c[i].Wl > c[j].Wl
+		if c[i].Wl == c[j].Wl {
+			if c[i].GP == c[j].GP {
+				return c[i].GD > c[j].GD
+			} else {
+				return c[i].GP < c[j].GP
+			}
+		} else {
+			return c[i].Wl > c[j].Wl
+		}
 	} else {
 		return c[i].Conference < c[j].Conference
 	}
