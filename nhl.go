@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"sort"
+	"strings"
 	"time"
 )
 
@@ -92,6 +93,7 @@ type Team struct {
 	WL10       int
 	GP         int
 	GD         int
+	WCFlag     int
 }
 
 type ByWl []Team
@@ -198,7 +200,7 @@ func main() {
 
 	sort.Sort(ByDivision(standings))
 
-	fmt.Println("NHL Division Standings")
+	section("NHL Division Standings")
 	conf := ""
 	div := ""
 	ln := 0
@@ -228,10 +230,66 @@ func main() {
 		fmt.Println()
 	}
 
+	section("NHL Wildcard Standings")
+	conf = ""
+	div = ""
+	ln = 0
+
+	for i, s := range standings {
+		if conf != s.Conference {
+			conf = s.Conference
+			ln = 0
+			fmt.Println()
+			fmt.Println(s.Conference, "Conference")
+		}
+		if div != s.Division {
+			div = s.Division
+			ln = 0
+			fmt.Println()
+			fmt.Println(s.Division, "Division")
+		}
+		ln = ln + 1
+		if ln < 4 {
+			standings[i].WCFlag = 1
+			fmt.Printf("%2d", ln)
+			fmt.Print(" ")
+			fmt.Printf("%-25v", s.Team)
+			fmt.Print(" ")
+			fmt.Printf("%4d", s.Wl)
+			fmt.Print(" ")
+			fmt.Printf("%4d", s.WL10)
+			fmt.Print(" ")
+			fmt.Printf("%5d", s.GD)
+			fmt.Println()
+		}
+	}
+	sort.Sort(ByConference(standings))
+	for _, s := range standings {
+		if conf != s.Conference {
+			conf = s.Conference
+			ln = 6
+			fmt.Println()
+			fmt.Println(s.Conference, "Conference Wildcards")
+		}
+		if s.WCFlag > 0 {
+			continue
+		}
+		ln = ln + 1
+		fmt.Printf("%2d", ln)
+		fmt.Print(" ")
+		fmt.Printf("%-25v", s.Team)
+		fmt.Print(" ")
+		fmt.Printf("%4d", s.Wl)
+		fmt.Print(" ")
+		fmt.Printf("%4d", s.WL10)
+		fmt.Print(" ")
+		fmt.Printf("%5d", s.GD)
+		fmt.Println()
+	}
+
 	sort.Sort(ByConference(standings))
 
-	fmt.Println()
-	fmt.Println("NHL Conference Standings")
+	section("NHL Conference Standings")
 	conf = ""
 	ln = 0
 	for _, s := range standings {
@@ -256,8 +314,7 @@ func main() {
 
 	sort.Sort(ByWl(standings))
 
-	fmt.Println()
-	fmt.Println("NHL League Standings")
+	section("NHL League Standings")
 
 	ln = 0
 	for _, s := range standings {
@@ -276,4 +333,11 @@ func main() {
 
 	// fmt.Print(standings)
 
+}
+
+func section(title string) {
+	fmt.Println()
+	fmt.Println(strings.Repeat("=", 45))
+	fmt.Println(title)
+	fmt.Println(strings.Repeat("=", 45))
 }
