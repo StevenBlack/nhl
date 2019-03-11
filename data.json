@@ -26,28 +26,28 @@
         "link" : "/api/v1/teams/15"
       },
       "leagueRecord" : {
-        "wins" : 38,
+        "wins" : 41,
         "losses" : 21,
         "ot" : 7,
         "type" : "league"
       },
-      "goalsAgainst" : 208,
-      "goalsScored" : 226,
-      "points" : 83,
+      "goalsAgainst" : 212,
+      "goalsScored" : 237,
+      "points" : 89,
       "divisionRank" : "1",
       "conferenceRank" : "4",
       "leagueRank" : "6",
       "wildCardRank" : "0",
-      "row" : 34,
-      "gamesPlayed" : 66,
+      "row" : 37,
+      "gamesPlayed" : 69,
       "streak" : {
         "streakType" : "wins",
-        "streakNumber" : 4,
-        "streakCode" : "W4"
+        "streakNumber" : 7,
+        "streakCode" : "W7"
       },
       "records" : {
         "divisionRecords" : [ {
-          "wins" : 4,
+          "wins" : 5,
           "losses" : 6,
           "ot" : 2,
           "type" : "Central"
@@ -62,18 +62,18 @@
           "ot" : 1,
           "type" : "Pacific"
         }, {
-          "wins" : 12,
+          "wins" : 14,
           "losses" : 5,
           "ot" : 2,
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 19,
+          "wins" : 21,
           "losses" : 9,
           "ot" : 5,
           "type" : "home"
         }, {
-          "wins" : 19,
+          "wins" : 20,
           "losses" : 12,
           "ot" : 2,
           "type" : "away"
@@ -82,24 +82,24 @@
           "losses" : 1,
           "type" : "shootOuts"
         }, {
-          "wins" : 7,
-          "losses" : 3,
+          "wins" : 9,
+          "losses" : 1,
           "ot" : 0,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 24,
+          "wins" : 26,
           "losses" : 10,
           "ot" : 4,
           "type" : "Eastern"
         }, {
-          "wins" : 14,
+          "wins" : 15,
           "losses" : 11,
           "ot" : 3,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 2,
@@ -107,24 +107,24 @@
         "link" : "/api/v1/teams/2"
       },
       "leagueRecord" : {
-        "wins" : 37,
-        "losses" : 21,
+        "wins" : 39,
+        "losses" : 22,
         "ot" : 7,
         "type" : "league"
       },
-      "goalsAgainst" : 157,
-      "goalsScored" : 187,
-      "points" : 81,
+      "goalsAgainst" : 168,
+      "goalsScored" : 198,
+      "points" : 85,
       "divisionRank" : "2",
       "conferenceRank" : "5",
-      "leagueRank" : "8",
+      "leagueRank" : "7",
       "wildCardRank" : "0",
-      "row" : 34,
-      "gamesPlayed" : 65,
+      "row" : 35,
+      "gamesPlayed" : 68,
       "streak" : {
         "streakType" : "losses",
-        "streakNumber" : 2,
-        "streakCode" : "L2"
+        "streakNumber" : 1,
+        "streakCode" : "L1"
       },
       "records" : {
         "divisionRecords" : [ {
@@ -133,7 +133,7 @@
           "ot" : 1,
           "type" : "Central"
         }, {
-          "wins" : 7,
+          "wins" : 9,
           "losses" : 4,
           "ot" : 4,
           "type" : "Atlantic"
@@ -144,22 +144,22 @@
           "type" : "Pacific"
         }, {
           "wins" : 15,
-          "losses" : 7,
+          "losses" : 8,
           "ot" : 1,
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 19,
-          "losses" : 10,
+          "wins" : 20,
+          "losses" : 11,
           "ot" : 4,
           "type" : "home"
         }, {
-          "wins" : 18,
+          "wins" : 19,
           "losses" : 11,
           "ot" : 3,
           "type" : "away"
         }, {
-          "wins" : 3,
+          "wins" : 4,
           "losses" : 5,
           "type" : "shootOuts"
         }, {
@@ -169,8 +169,8 @@
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 22,
-          "losses" : 11,
+          "wins" : 24,
+          "losses" : 12,
           "ot" : 5,
           "type" : "Eastern"
         }, {
@@ -180,88 +180,7 @@
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
-    }, {
-      "team" : {
-        "id" : 12,
-        "name" : "Carolina Hurricanes",
-        "link" : "/api/v1/teams/12"
-      },
-      "leagueRecord" : {
-        "wins" : 36,
-        "losses" : 23,
-        "ot" : 6,
-        "type" : "league"
-      },
-      "goalsAgainst" : 176,
-      "goalsScored" : 196,
-      "points" : 78,
-      "divisionRank" : "3",
-      "conferenceRank" : "6",
-      "leagueRank" : "10",
-      "wildCardRank" : "0",
-      "row" : 35,
-      "gamesPlayed" : 65,
-      "streak" : {
-        "streakType" : "wins",
-        "streakNumber" : 5,
-        "streakCode" : "W5"
-      },
-      "records" : {
-        "divisionRecords" : [ {
-          "wins" : 7,
-          "losses" : 3,
-          "ot" : 0,
-          "type" : "Central"
-        }, {
-          "wins" : 11,
-          "losses" : 7,
-          "ot" : 1,
-          "type" : "Atlantic"
-        }, {
-          "wins" : 9,
-          "losses" : 4,
-          "ot" : 3,
-          "type" : "Pacific"
-        }, {
-          "wins" : 9,
-          "losses" : 9,
-          "ot" : 2,
-          "type" : "Metropolitan"
-        } ],
-        "overallRecords" : [ {
-          "wins" : 18,
-          "losses" : 10,
-          "ot" : 4,
-          "type" : "home"
-        }, {
-          "wins" : 18,
-          "losses" : 13,
-          "ot" : 2,
-          "type" : "away"
-        }, {
-          "wins" : 1,
-          "losses" : 2,
-          "type" : "shootOuts"
-        }, {
-          "wins" : 8,
-          "losses" : 2,
-          "ot" : 0,
-          "type" : "lastTen"
-        } ],
-        "conferenceRecords" : [ {
-          "wins" : 20,
-          "losses" : 16,
-          "ot" : 3,
-          "type" : "Eastern"
-        }, {
-          "wins" : 16,
-          "losses" : 7,
-          "ot" : 3,
-          "type" : "Western"
-        } ]
-      },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 5,
@@ -269,20 +188,20 @@
         "link" : "/api/v1/teams/5"
       },
       "leagueRecord" : {
-        "wins" : 34,
-        "losses" : 22,
+        "wins" : 37,
+        "losses" : 23,
         "ot" : 9,
         "type" : "league"
       },
-      "goalsAgainst" : 202,
-      "goalsScored" : 226,
-      "points" : 77,
-      "divisionRank" : "4",
-      "conferenceRank" : "7",
-      "leagueRank" : "11",
-      "wildCardRank" : "1",
-      "row" : 33,
-      "gamesPlayed" : 65,
+      "goalsAgainst" : 210,
+      "goalsScored" : 237,
+      "points" : 83,
+      "divisionRank" : "3",
+      "conferenceRank" : "6",
+      "leagueRank" : "9",
+      "wildCardRank" : "0",
+      "row" : 36,
+      "gamesPlayed" : 69,
       "streak" : {
         "streakType" : "wins",
         "streakNumber" : 1,
@@ -295,7 +214,7 @@
           "ot" : 0,
           "type" : "Central"
         }, {
-          "wins" : 7,
+          "wins" : 9,
           "losses" : 6,
           "ot" : 6,
           "type" : "Atlantic"
@@ -305,19 +224,19 @@
           "ot" : 1,
           "type" : "Pacific"
         }, {
-          "wins" : 11,
-          "losses" : 7,
+          "wins" : 12,
+          "losses" : 8,
           "ot" : 2,
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 17,
+          "wins" : 20,
           "losses" : 12,
           "ot" : 2,
           "type" : "home"
         }, {
           "wins" : 17,
-          "losses" : 10,
+          "losses" : 11,
           "ot" : 7,
           "type" : "away"
         }, {
@@ -331,8 +250,8 @@
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 18,
-          "losses" : 13,
+          "wins" : 21,
+          "losses" : 14,
           "ot" : 8,
           "type" : "Eastern"
         }, {
@@ -342,7 +261,88 @@
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
+    }, {
+      "team" : {
+        "id" : 12,
+        "name" : "Carolina Hurricanes",
+        "link" : "/api/v1/teams/12"
+      },
+      "leagueRecord" : {
+        "wins" : 37,
+        "losses" : 24,
+        "ot" : 7,
+        "type" : "league"
+      },
+      "goalsAgainst" : 191,
+      "goalsScored" : 205,
+      "points" : 81,
+      "divisionRank" : "4",
+      "conferenceRank" : "7",
+      "leagueRank" : "11",
+      "wildCardRank" : "1",
+      "row" : 36,
+      "gamesPlayed" : 68,
+      "streak" : {
+        "streakType" : "wins",
+        "streakNumber" : 1,
+        "streakCode" : "W1"
+      },
+      "records" : {
+        "divisionRecords" : [ {
+          "wins" : 8,
+          "losses" : 4,
+          "ot" : 0,
+          "type" : "Central"
+        }, {
+          "wins" : 11,
+          "losses" : 7,
+          "ot" : 2,
+          "type" : "Atlantic"
+        }, {
+          "wins" : 9,
+          "losses" : 4,
+          "ot" : 3,
+          "type" : "Pacific"
+        }, {
+          "wins" : 9,
+          "losses" : 9,
+          "ot" : 2,
+          "type" : "Metropolitan"
+        } ],
+        "overallRecords" : [ {
+          "wins" : 18,
+          "losses" : 11,
+          "ot" : 4,
+          "type" : "home"
+        }, {
+          "wins" : 19,
+          "losses" : 13,
+          "ot" : 3,
+          "type" : "away"
+        }, {
+          "wins" : 1,
+          "losses" : 2,
+          "type" : "shootOuts"
+        }, {
+          "wins" : 7,
+          "losses" : 2,
+          "ot" : 1,
+          "type" : "lastTen"
+        } ],
+        "conferenceRecords" : [ {
+          "wins" : 20,
+          "losses" : 16,
+          "ot" : 4,
+          "type" : "Eastern"
+        }, {
+          "wins" : 17,
+          "losses" : 8,
+          "ot" : 3,
+          "type" : "Western"
+        } ]
+      },
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 29,
@@ -350,24 +350,24 @@
         "link" : "/api/v1/teams/29"
       },
       "leagueRecord" : {
-        "wins" : 36,
-        "losses" : 26,
+        "wins" : 38,
+        "losses" : 27,
         "ot" : 3,
         "type" : "league"
       },
-      "goalsAgainst" : 197,
-      "goalsScored" : 203,
-      "points" : 75,
+      "goalsAgainst" : 202,
+      "goalsScored" : 209,
+      "points" : 79,
       "divisionRank" : "5",
-      "conferenceRank" : "9",
-      "leagueRank" : "14",
-      "wildCardRank" : "3",
-      "row" : 36,
-      "gamesPlayed" : 65,
+      "conferenceRank" : "8",
+      "leagueRank" : "13",
+      "wildCardRank" : "2",
+      "row" : 37,
+      "gamesPlayed" : 68,
       "streak" : {
-        "streakType" : "losses",
-        "streakNumber" : 2,
-        "streakCode" : "L2"
+        "streakType" : "wins",
+        "streakNumber" : 1,
+        "streakCode" : "W1"
       },
       "records" : {
         "divisionRecords" : [ {
@@ -386,34 +386,34 @@
           "ot" : 2,
           "type" : "Pacific"
         }, {
-          "wins" : 13,
-          "losses" : 7,
+          "wins" : 15,
+          "losses" : 8,
           "ot" : 1,
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 17,
+          "wins" : 18,
           "losses" : 16,
           "ot" : 2,
           "type" : "home"
         }, {
-          "wins" : 19,
-          "losses" : 10,
+          "wins" : 20,
+          "losses" : 11,
           "ot" : 1,
           "type" : "away"
         }, {
-          "wins" : 0,
+          "wins" : 1,
           "losses" : 1,
           "type" : "shootOuts"
         }, {
-          "wins" : 4,
-          "losses" : 6,
+          "wins" : 5,
+          "losses" : 5,
           "ot" : 0,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 22,
-          "losses" : 16,
+          "wins" : 24,
+          "losses" : 17,
           "ot" : 1,
           "type" : "Eastern"
         }, {
@@ -423,7 +423,7 @@
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 4,
@@ -431,24 +431,24 @@
         "link" : "/api/v1/teams/4"
       },
       "leagueRecord" : {
-        "wins" : 32,
-        "losses" : 26,
+        "wins" : 33,
+        "losses" : 27,
         "ot" : 8,
         "type" : "league"
       },
-      "goalsAgainst" : 219,
-      "goalsScored" : 201,
-      "points" : 72,
+      "goalsAgainst" : 226,
+      "goalsScored" : 209,
+      "points" : 74,
       "divisionRank" : "6",
       "conferenceRank" : "10",
-      "leagueRank" : "16",
+      "leagueRank" : "17",
       "wildCardRank" : "4",
-      "row" : 30,
-      "gamesPlayed" : 66,
+      "row" : 31,
+      "gamesPlayed" : 68,
       "streak" : {
         "streakType" : "wins",
-        "streakNumber" : 2,
-        "streakCode" : "W2"
+        "streakNumber" : 1,
+        "streakCode" : "W1"
       },
       "records" : {
         "divisionRecords" : [ {
@@ -467,18 +467,18 @@
           "ot" : 4,
           "type" : "Pacific"
         }, {
-          "wins" : 8,
-          "losses" : 9,
+          "wins" : 9,
+          "losses" : 10,
           "ot" : 2,
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
           "wins" : 17,
-          "losses" : 12,
+          "losses" : 13,
           "ot" : 4,
           "type" : "home"
         }, {
-          "wins" : 15,
+          "wins" : 16,
           "losses" : 14,
           "ot" : 4,
           "type" : "away"
@@ -487,14 +487,14 @@
           "losses" : 1,
           "type" : "shootOuts"
         }, {
-          "wins" : 7,
-          "losses" : 2,
+          "wins" : 6,
+          "losses" : 3,
           "ot" : 1,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 18,
-          "losses" : 17,
+          "wins" : 19,
+          "losses" : 18,
           "ot" : 4,
           "type" : "Eastern"
         }, {
@@ -504,7 +504,7 @@
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 3,
@@ -512,35 +512,35 @@
         "link" : "/api/v1/teams/3"
       },
       "leagueRecord" : {
-        "wins" : 27,
-        "losses" : 27,
-        "ot" : 11,
+        "wins" : 28,
+        "losses" : 28,
+        "ot" : 12,
         "type" : "league"
       },
-      "goalsAgainst" : 218,
-      "goalsScored" : 190,
-      "points" : 65,
+      "goalsAgainst" : 224,
+      "goalsScored" : 196,
+      "points" : 68,
       "divisionRank" : "7",
       "conferenceRank" : "13",
       "leagueRank" : "23",
       "wildCardRank" : "7",
-      "row" : 21,
-      "gamesPlayed" : 65,
+      "row" : 22,
+      "gamesPlayed" : 68,
       "streak" : {
-        "streakType" : "ot",
+        "streakType" : "wins",
         "streakNumber" : 1,
-        "streakCode" : "OT1"
+        "streakCode" : "W1"
       },
       "records" : {
         "divisionRecords" : [ {
           "wins" : 5,
-          "losses" : 5,
+          "losses" : 6,
           "ot" : 1,
           "type" : "Central"
         }, {
           "wins" : 10,
           "losses" : 7,
-          "ot" : 2,
+          "ot" : 3,
           "type" : "Atlantic"
         }, {
           "wins" : 5,
@@ -548,44 +548,44 @@
           "ot" : 3,
           "type" : "Pacific"
         }, {
-          "wins" : 7,
+          "wins" : 8,
           "losses" : 10,
           "ot" : 5,
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 16,
+          "wins" : 17,
           "losses" : 11,
           "ot" : 8,
           "type" : "home"
         }, {
           "wins" : 11,
-          "losses" : 16,
-          "ot" : 3,
+          "losses" : 17,
+          "ot" : 4,
           "type" : "away"
         }, {
           "wins" : 6,
-          "losses" : 3,
+          "losses" : 4,
           "type" : "shootOuts"
         }, {
           "wins" : 3,
-          "losses" : 4,
-          "ot" : 3,
+          "losses" : 3,
+          "ot" : 4,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 17,
+          "wins" : 18,
           "losses" : 17,
-          "ot" : 7,
+          "ot" : 8,
           "type" : "Eastern"
         }, {
           "wins" : 10,
-          "losses" : 10,
+          "losses" : 11,
           "ot" : 4,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 1,
@@ -594,23 +594,23 @@
       },
       "leagueRecord" : {
         "wins" : 25,
-        "losses" : 33,
-        "ot" : 8,
+        "losses" : 35,
+        "ot" : 9,
         "type" : "league"
       },
-      "goalsAgainst" : 223,
-      "goalsScored" : 188,
-      "points" : 58,
+      "goalsAgainst" : 232,
+      "goalsScored" : 191,
+      "points" : 59,
       "divisionRank" : "8",
       "conferenceRank" : "14",
       "leagueRank" : "28",
       "wildCardRank" : "8",
       "row" : 24,
-      "gamesPlayed" : 66,
+      "gamesPlayed" : 69,
       "streak" : {
         "streakType" : "losses",
-        "streakNumber" : 3,
-        "streakCode" : "L3"
+        "streakNumber" : 2,
+        "streakCode" : "L2"
       },
       "records" : {
         "divisionRecords" : [ {
@@ -630,34 +630,34 @@
           "type" : "Pacific"
         }, {
           "wins" : 8,
-          "losses" : 12,
-          "ot" : 2,
+          "losses" : 14,
+          "ot" : 3,
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
           "wins" : 17,
           "losses" : 12,
-          "ot" : 5,
+          "ot" : 6,
           "type" : "home"
         }, {
           "wins" : 8,
-          "losses" : 21,
+          "losses" : 23,
           "ot" : 3,
           "type" : "away"
         }, {
           "wins" : 1,
-          "losses" : 3,
+          "losses" : 4,
           "type" : "shootOuts"
         }, {
-          "wins" : 4,
-          "losses" : 6,
-          "ot" : 0,
+          "wins" : 2,
+          "losses" : 7,
+          "ot" : 1,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
           "wins" : 16,
-          "losses" : 22,
-          "ot" : 4,
+          "losses" : 24,
+          "ot" : 5,
           "type" : "Eastern"
         }, {
           "wins" : 9,
@@ -666,7 +666,7 @@
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     } ]
   }, {
     "standingsType" : "regularSeason",
@@ -694,33 +694,34 @@
         "link" : "/api/v1/teams/14"
       },
       "leagueRecord" : {
-        "wins" : 50,
-        "losses" : 12,
+        "wins" : 52,
+        "losses" : 13,
         "ot" : 4,
         "type" : "league"
       },
-      "goalsAgainst" : 174,
-      "goalsScored" : 258,
-      "points" : 104,
+      "goalsAgainst" : 181,
+      "goalsScored" : 266,
+      "points" : 108,
       "divisionRank" : "1",
       "conferenceRank" : "1",
       "leagueRank" : "1",
       "wildCardRank" : "0",
-      "row" : 44,
-      "gamesPlayed" : 66,
+      "row" : 46,
+      "gamesPlayed" : 69,
       "streak" : {
         "streakType" : "wins",
         "streakNumber" : 1,
         "streakCode" : "W1"
       },
+      "clinchIndicator" : "x",
       "records" : {
         "divisionRecords" : [ {
-          "wins" : 6,
-          "losses" : 2,
+          "wins" : 7,
+          "losses" : 3,
           "ot" : 3,
           "type" : "Central"
         }, {
-          "wins" : 16,
+          "wins" : 17,
           "losses" : 4,
           "ot" : 0,
           "type" : "Atlantic"
@@ -736,8 +737,8 @@
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 27,
-          "losses" : 5,
+          "wins" : 29,
+          "losses" : 6,
           "ot" : 2,
           "type" : "home"
         }, {
@@ -750,24 +751,24 @@
           "losses" : 1,
           "type" : "shootOuts"
         }, {
-          "wins" : 9,
-          "losses" : 1,
+          "wins" : 8,
+          "losses" : 2,
           "ot" : 0,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 34,
+          "wins" : 35,
           "losses" : 6,
           "ot" : 0,
           "type" : "Eastern"
         }, {
-          "wins" : 16,
-          "losses" : 6,
+          "wins" : 17,
+          "losses" : 7,
           "ot" : 4,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 6,
@@ -775,24 +776,24 @@
         "link" : "/api/v1/teams/6"
       },
       "leagueRecord" : {
-        "wins" : 39,
-        "losses" : 17,
+        "wins" : 42,
+        "losses" : 18,
         "ot" : 9,
         "type" : "league"
       },
-      "goalsAgainst" : 161,
-      "goalsScored" : 194,
-      "points" : 87,
+      "goalsAgainst" : 173,
+      "goalsScored" : 207,
+      "points" : 93,
       "divisionRank" : "2",
       "conferenceRank" : "2",
-      "leagueRank" : "3",
+      "leagueRank" : "2",
       "wildCardRank" : "0",
-      "row" : 37,
-      "gamesPlayed" : 65,
+      "row" : 40,
+      "gamesPlayed" : 69,
       "streak" : {
-        "streakType" : "wins",
-        "streakNumber" : 3,
-        "streakCode" : "W3"
+        "streakType" : "losses",
+        "streakNumber" : 1,
+        "streakCode" : "L1"
       },
       "records" : {
         "divisionRecords" : [ {
@@ -801,7 +802,7 @@
           "ot" : 3,
           "type" : "Central"
         }, {
-          "wins" : 13,
+          "wins" : 15,
           "losses" : 6,
           "ot" : 2,
           "type" : "Atlantic"
@@ -811,19 +812,19 @@
           "ot" : 2,
           "type" : "Pacific"
         }, {
-          "wins" : 7,
-          "losses" : 7,
+          "wins" : 8,
+          "losses" : 8,
           "ot" : 2,
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 24,
+          "wins" : 27,
           "losses" : 7,
           "ot" : 3,
           "type" : "home"
         }, {
           "wins" : 15,
-          "losses" : 10,
+          "losses" : 11,
           "ot" : 6,
           "type" : "away"
         }, {
@@ -831,14 +832,14 @@
           "losses" : 3,
           "type" : "shootOuts"
         }, {
-          "wins" : 9,
-          "losses" : 0,
+          "wins" : 8,
+          "losses" : 1,
           "ot" : 1,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 20,
-          "losses" : 13,
+          "wins" : 23,
+          "losses" : 14,
           "ot" : 4,
           "type" : "Eastern"
         }, {
@@ -848,7 +849,7 @@
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 10,
@@ -856,20 +857,20 @@
         "link" : "/api/v1/teams/10"
       },
       "leagueRecord" : {
-        "wins" : 40,
+        "wins" : 42,
         "losses" : 21,
-        "ot" : 4,
+        "ot" : 5,
         "type" : "league"
       },
-      "goalsAgainst" : 186,
-      "goalsScored" : 233,
-      "points" : 84,
+      "goalsAgainst" : 193,
+      "goalsScored" : 244,
+      "points" : 89,
       "divisionRank" : "3",
       "conferenceRank" : "3",
       "leagueRank" : "5",
       "wildCardRank" : "0",
-      "row" : 40,
-      "gamesPlayed" : 65,
+      "row" : 42,
+      "gamesPlayed" : 68,
       "streak" : {
         "streakType" : "wins",
         "streakNumber" : 1,
@@ -887,9 +888,9 @@
           "ot" : 3,
           "type" : "Atlantic"
         }, {
-          "wins" : 10,
+          "wins" : 12,
           "losses" : 3,
-          "ot" : 0,
+          "ot" : 1,
           "type" : "Pacific"
         }, {
           "wins" : 12,
@@ -903,9 +904,9 @@
           "ot" : 1,
           "type" : "home"
         }, {
-          "wins" : 19,
+          "wins" : 21,
           "losses" : 9,
-          "ot" : 3,
+          "ot" : 4,
           "type" : "away"
         }, {
           "wins" : 0,
@@ -913,8 +914,8 @@
           "type" : "shootOuts"
         }, {
           "wins" : 6,
-          "losses" : 3,
-          "ot" : 1,
+          "losses" : 2,
+          "ot" : 2,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
@@ -923,13 +924,13 @@
           "ot" : 3,
           "type" : "Eastern"
         }, {
-          "wins" : 16,
+          "wins" : 18,
           "losses" : 8,
-          "ot" : 1,
+          "ot" : 2,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 8,
@@ -937,24 +938,24 @@
         "link" : "/api/v1/teams/8"
       },
       "leagueRecord" : {
-        "wins" : 35,
-        "losses" : 24,
+        "wins" : 36,
+        "losses" : 26,
         "ot" : 7,
         "type" : "league"
       },
-      "goalsAgainst" : 193,
-      "goalsScored" : 201,
-      "points" : 77,
+      "goalsAgainst" : 207,
+      "goalsScored" : 208,
+      "points" : 79,
       "divisionRank" : "4",
-      "conferenceRank" : "8",
-      "leagueRank" : "12",
-      "wildCardRank" : "2",
-      "row" : 33,
-      "gamesPlayed" : 66,
+      "conferenceRank" : "9",
+      "leagueRank" : "15",
+      "wildCardRank" : "3",
+      "row" : 34,
+      "gamesPlayed" : 69,
       "streak" : {
         "streakType" : "losses",
-        "streakNumber" : 1,
-        "streakCode" : "L1"
+        "streakNumber" : 2,
+        "streakCode" : "L2"
       },
       "records" : {
         "divisionRecords" : [ {
@@ -968,8 +969,8 @@
           "ot" : 5,
           "type" : "Atlantic"
         }, {
-          "wins" : 10,
-          "losses" : 3,
+          "wins" : 11,
+          "losses" : 5,
           "ot" : 0,
           "type" : "Pacific"
         }, {
@@ -984,8 +985,8 @@
           "ot" : 4,
           "type" : "home"
         }, {
-          "wins" : 16,
-          "losses" : 13,
+          "wins" : 17,
+          "losses" : 15,
           "ot" : 3,
           "type" : "away"
         }, {
@@ -993,8 +994,8 @@
           "losses" : 0,
           "type" : "shootOuts"
         }, {
-          "wins" : 4,
-          "losses" : 6,
+          "wins" : 5,
+          "losses" : 5,
           "ot" : 0,
           "type" : "lastTen"
         } ],
@@ -1004,94 +1005,13 @@
           "ot" : 7,
           "type" : "Eastern"
         }, {
-          "wins" : 15,
-          "losses" : 10,
+          "wins" : 16,
+          "losses" : 12,
           "ot" : 0,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
-    }, {
-      "team" : {
-        "id" : 7,
-        "name" : "Buffalo Sabres",
-        "link" : "/api/v1/teams/7"
-      },
-      "leagueRecord" : {
-        "wins" : 30,
-        "losses" : 28,
-        "ot" : 8,
-        "type" : "league"
-      },
-      "goalsAgainst" : 211,
-      "goalsScored" : 190,
-      "points" : 68,
-      "divisionRank" : "5",
-      "conferenceRank" : "11",
-      "leagueRank" : "21",
-      "wildCardRank" : "5",
-      "row" : 26,
-      "gamesPlayed" : 66,
-      "streak" : {
-        "streakType" : "losses",
-        "streakNumber" : 2,
-        "streakCode" : "L2"
-      },
-      "records" : {
-        "divisionRecords" : [ {
-          "wins" : 3,
-          "losses" : 6,
-          "ot" : 0,
-          "type" : "Central"
-        }, {
-          "wins" : 9,
-          "losses" : 9,
-          "ot" : 4,
-          "type" : "Atlantic"
-        }, {
-          "wins" : 10,
-          "losses" : 5,
-          "ot" : 1,
-          "type" : "Pacific"
-        }, {
-          "wins" : 8,
-          "losses" : 8,
-          "ot" : 3,
-          "type" : "Metropolitan"
-        } ],
-        "overallRecords" : [ {
-          "wins" : 19,
-          "losses" : 10,
-          "ot" : 4,
-          "type" : "home"
-        }, {
-          "wins" : 11,
-          "losses" : 18,
-          "ot" : 4,
-          "type" : "away"
-        }, {
-          "wins" : 4,
-          "losses" : 2,
-          "type" : "shootOuts"
-        }, {
-          "wins" : 2,
-          "losses" : 7,
-          "ot" : 1,
-          "type" : "lastTen"
-        } ],
-        "conferenceRecords" : [ {
-          "wins" : 17,
-          "losses" : 17,
-          "ot" : 7,
-          "type" : "Eastern"
-        }, {
-          "wins" : 13,
-          "losses" : 11,
-          "ot" : 1,
-          "type" : "Western"
-        } ]
-      },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 13,
@@ -1099,34 +1019,34 @@
         "link" : "/api/v1/teams/13"
       },
       "leagueRecord" : {
-        "wins" : 28,
-        "losses" : 26,
-        "ot" : 11,
+        "wins" : 30,
+        "losses" : 27,
+        "ot" : 12,
         "type" : "league"
       },
-      "goalsAgainst" : 224,
-      "goalsScored" : 207,
-      "points" : 67,
-      "divisionRank" : "6",
-      "conferenceRank" : "12",
-      "leagueRank" : "22",
-      "wildCardRank" : "6",
-      "row" : 25,
-      "gamesPlayed" : 65,
+      "goalsAgainst" : 234,
+      "goalsScored" : 224,
+      "points" : 72,
+      "divisionRank" : "5",
+      "conferenceRank" : "11",
+      "leagueRank" : "21",
+      "wildCardRank" : "5",
+      "row" : 27,
+      "gamesPlayed" : 69,
       "streak" : {
-        "streakType" : "losses",
-        "streakNumber" : 1,
-        "streakCode" : "L1"
+        "streakType" : "wins",
+        "streakNumber" : 2,
+        "streakCode" : "W2"
       },
       "records" : {
         "divisionRecords" : [ {
-          "wins" : 4,
+          "wins" : 5,
           "losses" : 7,
           "ot" : 1,
           "type" : "Central"
         }, {
-          "wins" : 11,
-          "losses" : 7,
+          "wins" : 12,
+          "losses" : 8,
           "ot" : 3,
           "type" : "Atlantic"
         }, {
@@ -1137,42 +1057,123 @@
         }, {
           "wins" : 8,
           "losses" : 8,
-          "ot" : 4,
+          "ot" : 5,
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 16,
+          "wins" : 18,
           "losses" : 12,
           "ot" : 6,
           "type" : "home"
         }, {
           "wins" : 12,
-          "losses" : 14,
-          "ot" : 5,
+          "losses" : 15,
+          "ot" : 6,
           "type" : "away"
         }, {
           "wins" : 3,
           "losses" : 6,
           "type" : "shootOuts"
         }, {
-          "wins" : 5,
+          "wins" : 4,
           "losses" : 2,
-          "ot" : 3,
+          "ot" : 4,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 19,
-          "losses" : 15,
-          "ot" : 7,
+          "wins" : 20,
+          "losses" : 16,
+          "ot" : 8,
           "type" : "Eastern"
         }, {
-          "wins" : 9,
+          "wins" : 10,
           "losses" : 11,
           "ot" : 4,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
+    }, {
+      "team" : {
+        "id" : 7,
+        "name" : "Buffalo Sabres",
+        "link" : "/api/v1/teams/7"
+      },
+      "leagueRecord" : {
+        "wins" : 30,
+        "losses" : 29,
+        "ot" : 9,
+        "type" : "league"
+      },
+      "goalsAgainst" : 219,
+      "goalsScored" : 194,
+      "points" : 69,
+      "divisionRank" : "6",
+      "conferenceRank" : "12",
+      "leagueRank" : "22",
+      "wildCardRank" : "6",
+      "row" : 26,
+      "gamesPlayed" : 68,
+      "streak" : {
+        "streakType" : "losses",
+        "streakNumber" : 1,
+        "streakCode" : "L1"
+      },
+      "records" : {
+        "divisionRecords" : [ {
+          "wins" : 3,
+          "losses" : 7,
+          "ot" : 1,
+          "type" : "Central"
+        }, {
+          "wins" : 9,
+          "losses" : 9,
+          "ot" : 4,
+          "type" : "Atlantic"
+        }, {
+          "wins" : 10,
+          "losses" : 5,
+          "ot" : 1,
+          "type" : "Pacific"
+        }, {
+          "wins" : 8,
+          "losses" : 8,
+          "ot" : 3,
+          "type" : "Metropolitan"
+        } ],
+        "overallRecords" : [ {
+          "wins" : 19,
+          "losses" : 10,
+          "ot" : 4,
+          "type" : "home"
+        }, {
+          "wins" : 11,
+          "losses" : 19,
+          "ot" : 5,
+          "type" : "away"
+        }, {
+          "wins" : 4,
+          "losses" : 3,
+          "type" : "shootOuts"
+        }, {
+          "wins" : 2,
+          "losses" : 6,
+          "ot" : 2,
+          "type" : "lastTen"
+        } ],
+        "conferenceRecords" : [ {
+          "wins" : 17,
+          "losses" : 17,
+          "ot" : 7,
+          "type" : "Eastern"
+        }, {
+          "wins" : 13,
+          "losses" : 12,
+          "ot" : 2,
+          "type" : "Western"
+        } ]
+      },
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 17,
@@ -1180,34 +1181,34 @@
         "link" : "/api/v1/teams/17"
       },
       "leagueRecord" : {
-        "wins" : 23,
-        "losses" : 33,
-        "ot" : 9,
+        "wins" : 24,
+        "losses" : 35,
+        "ot" : 10,
         "type" : "league"
       },
-      "goalsAgainst" : 223,
-      "goalsScored" : 179,
-      "points" : 55,
+      "goalsAgainst" : 238,
+      "goalsScored" : 188,
+      "points" : 58,
       "divisionRank" : "7",
       "conferenceRank" : "15",
       "leagueRank" : "30",
       "wildCardRank" : "9",
       "row" : 21,
-      "gamesPlayed" : 65,
+      "gamesPlayed" : 69,
       "streak" : {
         "streakType" : "losses",
-        "streakNumber" : 4,
-        "streakCode" : "L4"
+        "streakNumber" : 2,
+        "streakCode" : "L2"
       },
       "records" : {
         "divisionRecords" : [ {
           "wins" : 5,
           "losses" : 6,
-          "ot" : 1,
+          "ot" : 2,
           "type" : "Central"
         }, {
           "wins" : 7,
-          "losses" : 10,
+          "losses" : 12,
           "ot" : 4,
           "type" : "Atlantic"
         }, {
@@ -1216,44 +1217,44 @@
           "ot" : 1,
           "type" : "Pacific"
         }, {
-          "wins" : 6,
+          "wins" : 7,
           "losses" : 9,
           "ot" : 3,
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 12,
+          "wins" : 13,
           "losses" : 17,
           "ot" : 5,
           "type" : "home"
         }, {
           "wins" : 11,
-          "losses" : 16,
-          "ot" : 4,
+          "losses" : 18,
+          "ot" : 5,
           "type" : "away"
         }, {
-          "wins" : 2,
+          "wins" : 3,
           "losses" : 5,
           "type" : "shootOuts"
         }, {
-          "wins" : 2,
-          "losses" : 6,
+          "wins" : 1,
+          "losses" : 7,
           "ot" : 2,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 13,
-          "losses" : 19,
+          "wins" : 14,
+          "losses" : 21,
           "ot" : 7,
           "type" : "Eastern"
         }, {
           "wins" : 10,
           "losses" : 14,
-          "ot" : 2,
+          "ot" : 3,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 9,
@@ -1262,23 +1263,23 @@
       },
       "leagueRecord" : {
         "wins" : 23,
-        "losses" : 38,
-        "ot" : 5,
+        "losses" : 40,
+        "ot" : 6,
         "type" : "league"
       },
-      "goalsAgainst" : 246,
-      "goalsScored" : 195,
-      "points" : 51,
+      "goalsAgainst" : 258,
+      "goalsScored" : 203,
+      "points" : 52,
       "divisionRank" : "8",
       "conferenceRank" : "16",
       "leagueRank" : "31",
       "wildCardRank" : "10",
       "row" : 23,
-      "gamesPlayed" : 66,
+      "gamesPlayed" : 69,
       "streak" : {
-        "streakType" : "wins",
-        "streakNumber" : 1,
-        "streakCode" : "W1"
+        "streakType" : "losses",
+        "streakNumber" : 2,
+        "streakCode" : "L2"
       },
       "records" : {
         "divisionRecords" : [ {
@@ -1288,7 +1289,7 @@
           "type" : "Central"
         }, {
           "wins" : 7,
-          "losses" : 12,
+          "losses" : 13,
           "ot" : 2,
           "type" : "Atlantic"
         }, {
@@ -1298,34 +1299,34 @@
           "type" : "Pacific"
         }, {
           "wins" : 6,
-          "losses" : 13,
-          "ot" : 0,
+          "losses" : 14,
+          "ot" : 1,
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
           "wins" : 14,
-          "losses" : 15,
+          "losses" : 16,
           "ot" : 4,
           "type" : "home"
         }, {
           "wins" : 9,
-          "losses" : 23,
-          "ot" : 1,
+          "losses" : 24,
+          "ot" : 2,
           "type" : "away"
         }, {
           "wins" : 0,
-          "losses" : 0,
+          "losses" : 1,
           "type" : "shootOuts"
         }, {
-          "wins" : 2,
+          "wins" : 1,
           "losses" : 8,
-          "ot" : 0,
+          "ot" : 1,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
           "wins" : 13,
-          "losses" : 25,
-          "ot" : 2,
+          "losses" : 27,
+          "ot" : 3,
           "type" : "Eastern"
         }, {
           "wins" : 10,
@@ -1334,7 +1335,7 @@
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     } ]
   }, {
     "standingsType" : "regularSeason",
@@ -1362,24 +1363,24 @@
         "link" : "/api/v1/teams/52"
       },
       "leagueRecord" : {
-        "wins" : 39,
-        "losses" : 22,
+        "wins" : 40,
+        "losses" : 24,
         "ot" : 4,
         "type" : "league"
       },
-      "goalsAgainst" : 193,
-      "goalsScored" : 222,
-      "points" : 82,
+      "goalsAgainst" : 202,
+      "goalsScored" : 233,
+      "points" : 84,
       "divisionRank" : "1",
       "conferenceRank" : "3",
-      "leagueRank" : "7",
+      "leagueRank" : "8",
       "wildCardRank" : "0",
-      "row" : 37,
-      "gamesPlayed" : 65,
+      "row" : 38,
+      "gamesPlayed" : 68,
       "streak" : {
-        "streakType" : "wins",
-        "streakNumber" : 2,
-        "streakCode" : "W2"
+        "streakType" : "losses",
+        "streakNumber" : 1,
+        "streakCode" : "L1"
       },
       "records" : {
         "divisionRecords" : [ {
@@ -1389,7 +1390,7 @@
           "type" : "Central"
         }, {
           "wins" : 6,
-          "losses" : 5,
+          "losses" : 6,
           "ot" : 2,
           "type" : "Atlantic"
         }, {
@@ -1398,8 +1399,8 @@
           "ot" : 2,
           "type" : "Pacific"
         }, {
-          "wins" : 10,
-          "losses" : 3,
+          "wins" : 11,
+          "losses" : 4,
           "ot" : 0,
           "type" : "Metropolitan"
         } ],
@@ -1409,8 +1410,8 @@
           "ot" : 4,
           "type" : "home"
         }, {
-          "wins" : 17,
-          "losses" : 14,
+          "wins" : 18,
+          "losses" : 16,
           "ot" : 0,
           "type" : "away"
         }, {
@@ -1418,14 +1419,14 @@
           "losses" : 1,
           "type" : "shootOuts"
         }, {
-          "wins" : 5,
-          "losses" : 4,
+          "wins" : 4,
+          "losses" : 5,
           "ot" : 1,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 16,
-          "losses" : 8,
+          "wins" : 17,
+          "losses" : 10,
           "ot" : 2,
           "type" : "Eastern"
         }, {
@@ -1435,7 +1436,7 @@
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 18,
@@ -1443,28 +1444,28 @@
         "link" : "/api/v1/teams/18"
       },
       "leagueRecord" : {
-        "wins" : 38,
-        "losses" : 25,
+        "wins" : 39,
+        "losses" : 26,
         "ot" : 5,
         "type" : "league"
       },
-      "goalsAgainst" : 180,
-      "goalsScored" : 202,
-      "points" : 81,
+      "goalsAgainst" : 189,
+      "goalsScored" : 210,
+      "points" : 83,
       "divisionRank" : "2",
       "conferenceRank" : "4",
-      "leagueRank" : "9",
+      "leagueRank" : "10",
       "wildCardRank" : "0",
       "row" : 35,
-      "gamesPlayed" : 68,
+      "gamesPlayed" : 70,
       "streak" : {
-        "streakType" : "wins",
+        "streakType" : "losses",
         "streakNumber" : 1,
-        "streakCode" : "W1"
+        "streakCode" : "L1"
       },
       "records" : {
         "divisionRecords" : [ {
-          "wins" : 11,
+          "wins" : 12,
           "losses" : 10,
           "ot" : 1,
           "type" : "Central"
@@ -1480,13 +1481,13 @@
           "type" : "Pacific"
         }, {
           "wins" : 8,
-          "losses" : 3,
+          "losses" : 4,
           "ot" : 1,
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 21,
-          "losses" : 12,
+          "wins" : 22,
+          "losses" : 13,
           "ot" : 1,
           "type" : "home"
         }, {
@@ -1495,7 +1496,7 @@
           "ot" : 4,
           "type" : "away"
         }, {
-          "wins" : 3,
+          "wins" : 4,
           "losses" : 1,
           "type" : "shootOuts"
         }, {
@@ -1506,17 +1507,17 @@
         } ],
         "conferenceRecords" : [ {
           "wins" : 17,
-          "losses" : 6,
+          "losses" : 7,
           "ot" : 3,
           "type" : "Eastern"
         }, {
-          "wins" : 21,
+          "wins" : 22,
           "losses" : 19,
           "ot" : 2,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 19,
@@ -1524,24 +1525,24 @@
         "link" : "/api/v1/teams/19"
       },
       "leagueRecord" : {
-        "wins" : 34,
+        "wins" : 36,
         "losses" : 25,
-        "ot" : 6,
+        "ot" : 7,
         "type" : "league"
       },
-      "goalsAgainst" : 181,
-      "goalsScored" : 187,
-      "points" : 74,
+      "goalsAgainst" : 188,
+      "goalsScored" : 198,
+      "points" : 79,
       "divisionRank" : "3",
       "conferenceRank" : "6",
-      "leagueRank" : "15",
+      "leagueRank" : "14",
       "wildCardRank" : "0",
-      "row" : 33,
-      "gamesPlayed" : 65,
+      "row" : 35,
+      "gamesPlayed" : 68,
       "streak" : {
-        "streakType" : "losses",
-        "streakNumber" : 2,
-        "streakCode" : "L2"
+        "streakType" : "ot",
+        "streakNumber" : 1,
+        "streakCode" : "OT1"
       },
       "records" : {
         "divisionRecords" : [ {
@@ -1555,9 +1556,9 @@
           "ot" : 0,
           "type" : "Atlantic"
         }, {
-          "wins" : 8,
+          "wins" : 10,
           "losses" : 8,
-          "ot" : 1,
+          "ot" : 2,
           "type" : "Pacific"
         }, {
           "wins" : 6,
@@ -1571,18 +1572,18 @@
           "ot" : 2,
           "type" : "home"
         }, {
-          "wins" : 17,
+          "wins" : 19,
           "losses" : 11,
-          "ot" : 4,
+          "ot" : 5,
           "type" : "away"
         }, {
           "wins" : 1,
           "losses" : 1,
           "type" : "shootOuts"
         }, {
-          "wins" : 6,
+          "wins" : 5,
           "losses" : 3,
-          "ot" : 1,
+          "ot" : 2,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
@@ -1591,13 +1592,13 @@
           "ot" : 1,
           "type" : "Eastern"
         }, {
-          "wins" : 19,
+          "wins" : 21,
           "losses" : 17,
-          "ot" : 5,
+          "ot" : 6,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 25,
@@ -1605,29 +1606,29 @@
         "link" : "/api/v1/teams/25"
       },
       "leagueRecord" : {
-        "wins" : 33,
-        "losses" : 27,
+        "wins" : 35,
+        "losses" : 28,
         "ot" : 5,
         "type" : "league"
       },
-      "goalsAgainst" : 170,
-      "goalsScored" : 166,
-      "points" : 71,
+      "goalsAgainst" : 172,
+      "goalsScored" : 172,
+      "points" : 75,
       "divisionRank" : "4",
       "conferenceRank" : "7",
-      "leagueRank" : "17",
+      "leagueRank" : "16",
       "wildCardRank" : "1",
-      "row" : 33,
-      "gamesPlayed" : 65,
+      "row" : 35,
+      "gamesPlayed" : 68,
       "streak" : {
-        "streakType" : "wins",
-        "streakNumber" : 2,
-        "streakCode" : "W2"
+        "streakType" : "losses",
+        "streakNumber" : 1,
+        "streakCode" : "L1"
       },
       "records" : {
         "divisionRecords" : [ {
-          "wins" : 10,
-          "losses" : 7,
+          "wins" : 11,
+          "losses" : 8,
           "ot" : 2,
           "type" : "Central"
         }, {
@@ -1641,14 +1642,14 @@
           "ot" : 1,
           "type" : "Pacific"
         }, {
-          "wins" : 4,
+          "wins" : 5,
           "losses" : 9,
           "ot" : 0,
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 19,
-          "losses" : 10,
+          "wins" : 21,
+          "losses" : 11,
           "ot" : 2,
           "type" : "home"
         }, {
@@ -1661,24 +1662,24 @@
           "losses" : 0,
           "type" : "shootOuts"
         }, {
-          "wins" : 5,
-          "losses" : 5,
+          "wins" : 6,
+          "losses" : 4,
           "ot" : 0,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 11,
+          "wins" : 12,
           "losses" : 14,
           "ot" : 2,
           "type" : "Eastern"
         }, {
-          "wins" : 22,
-          "losses" : 13,
+          "wins" : 23,
+          "losses" : 14,
           "ot" : 3,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 30,
@@ -1686,34 +1687,34 @@
         "link" : "/api/v1/teams/30"
       },
       "leagueRecord" : {
-        "wins" : 32,
-        "losses" : 27,
-        "ot" : 7,
+        "wins" : 33,
+        "losses" : 28,
+        "ot" : 8,
         "type" : "league"
       },
-      "goalsAgainst" : 191,
-      "goalsScored" : 182,
-      "points" : 71,
+      "goalsAgainst" : 202,
+      "goalsScored" : 191,
+      "points" : 74,
       "divisionRank" : "5",
       "conferenceRank" : "8",
       "leagueRank" : "18",
       "wildCardRank" : "2",
-      "row" : 31,
-      "gamesPlayed" : 66,
+      "row" : 32,
+      "gamesPlayed" : 69,
       "streak" : {
-        "streakType" : "ot",
+        "streakType" : "losses",
         "streakNumber" : 1,
-        "streakCode" : "OT1"
+        "streakCode" : "L1"
       },
       "records" : {
         "divisionRecords" : [ {
           "wins" : 11,
           "losses" : 6,
-          "ot" : 3,
+          "ot" : 4,
           "type" : "Central"
         }, {
-          "wins" : 8,
-          "losses" : 4,
+          "wins" : 9,
+          "losses" : 5,
           "ot" : 1,
           "type" : "Atlantic"
         }, {
@@ -1733,33 +1734,33 @@
           "ot" : 6,
           "type" : "home"
         }, {
-          "wins" : 18,
-          "losses" : 14,
-          "ot" : 1,
+          "wins" : 19,
+          "losses" : 15,
+          "ot" : 2,
           "type" : "away"
         }, {
           "wins" : 1,
-          "losses" : 3,
+          "losses" : 4,
           "type" : "shootOuts"
         }, {
-          "wins" : 5,
-          "losses" : 3,
+          "wins" : 6,
+          "losses" : 2,
           "ot" : 2,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 11,
-          "losses" : 11,
+          "wins" : 12,
+          "losses" : 12,
           "ot" : 3,
           "type" : "Eastern"
         }, {
           "wins" : 21,
           "losses" : 16,
-          "ot" : 4,
+          "ot" : 5,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 21,
@@ -1767,33 +1768,33 @@
         "link" : "/api/v1/teams/21"
       },
       "leagueRecord" : {
-        "wins" : 28,
-        "losses" : 26,
+        "wins" : 30,
+        "losses" : 27,
         "ot" : 12,
         "type" : "league"
       },
-      "goalsAgainst" : 208,
-      "goalsScored" : 216,
-      "points" : 68,
+      "goalsAgainst" : 215,
+      "goalsScored" : 223,
+      "points" : 72,
       "divisionRank" : "6",
       "conferenceRank" : "10",
       "leagueRank" : "20",
       "wildCardRank" : "4",
-      "row" : 27,
-      "gamesPlayed" : 66,
+      "row" : 29,
+      "gamesPlayed" : 69,
       "streak" : {
-        "streakType" : "losses",
-        "streakNumber" : 2,
-        "streakCode" : "L2"
+        "streakType" : "wins",
+        "streakNumber" : 1,
+        "streakCode" : "W1"
       },
       "records" : {
         "divisionRecords" : [ {
           "wins" : 8,
-          "losses" : 8,
+          "losses" : 9,
           "ot" : 3,
           "type" : "Central"
         }, {
-          "wins" : 7,
+          "wins" : 9,
           "losses" : 5,
           "ot" : 2,
           "type" : "Atlantic"
@@ -1809,13 +1810,13 @@
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 13,
+          "wins" : 15,
           "losses" : 12,
           "ot" : 6,
           "type" : "home"
         }, {
           "wins" : 15,
-          "losses" : 14,
+          "losses" : 15,
           "ot" : 6,
           "type" : "away"
         }, {
@@ -1829,18 +1830,18 @@
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 13,
+          "wins" : 15,
           "losses" : 9,
           "ot" : 6,
           "type" : "Eastern"
         }, {
           "wins" : 15,
-          "losses" : 17,
+          "losses" : 18,
           "ot" : 6,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 16,
@@ -1848,33 +1849,33 @@
         "link" : "/api/v1/teams/16"
       },
       "leagueRecord" : {
-        "wins" : 27,
+        "wins" : 29,
         "losses" : 30,
         "ot" : 9,
         "type" : "league"
       },
-      "goalsAgainst" : 250,
-      "goalsScored" : 220,
-      "points" : 63,
+      "goalsAgainst" : 255,
+      "goalsScored" : 227,
+      "points" : 67,
       "divisionRank" : "7",
-      "conferenceRank" : "12",
-      "leagueRank" : "25",
-      "wildCardRank" : "6",
-      "row" : 26,
-      "gamesPlayed" : 66,
+      "conferenceRank" : "11",
+      "leagueRank" : "24",
+      "wildCardRank" : "5",
+      "row" : 27,
+      "gamesPlayed" : 68,
       "streak" : {
-        "streakType" : "losses",
+        "streakType" : "wins",
         "streakNumber" : 2,
-        "streakCode" : "L2"
+        "streakCode" : "W2"
       },
       "records" : {
         "divisionRecords" : [ {
-          "wins" : 10,
+          "wins" : 11,
           "losses" : 6,
           "ot" : 3,
           "type" : "Central"
         }, {
-          "wins" : 6,
+          "wins" : 7,
           "losses" : 6,
           "ot" : 1,
           "type" : "Atlantic"
@@ -1890,38 +1891,38 @@
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 14,
+          "wins" : 15,
           "losses" : 13,
           "ot" : 6,
           "type" : "home"
         }, {
-          "wins" : 13,
+          "wins" : 14,
           "losses" : 17,
           "ot" : 3,
           "type" : "away"
         }, {
-          "wins" : 1,
+          "wins" : 2,
           "losses" : 1,
           "type" : "shootOuts"
         }, {
-          "wins" : 4,
-          "losses" : 6,
+          "wins" : 5,
+          "losses" : 5,
           "ot" : 0,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 13,
+          "wins" : 14,
           "losses" : 12,
           "ot" : 3,
           "type" : "Eastern"
         }, {
-          "wins" : 14,
+          "wins" : 15,
           "losses" : 18,
           "ot" : 6,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     } ]
   }, {
     "standingsType" : "regularSeason",
@@ -1949,24 +1950,24 @@
         "link" : "/api/v1/teams/20"
       },
       "leagueRecord" : {
-        "wins" : 41,
-        "losses" : 17,
+        "wins" : 42,
+        "losses" : 20,
         "ot" : 7,
         "type" : "league"
       },
-      "goalsAgainst" : 186,
-      "goalsScored" : 232,
-      "points" : 89,
+      "goalsAgainst" : 199,
+      "goalsScored" : 241,
+      "points" : 91,
       "divisionRank" : "1",
       "conferenceRank" : "1",
-      "leagueRank" : "2",
+      "leagueRank" : "3",
       "wildCardRank" : "0",
-      "row" : 41,
-      "gamesPlayed" : 65,
+      "row" : 42,
+      "gamesPlayed" : 69,
       "streak" : {
-        "streakType" : "losses",
+        "streakType" : "wins",
         "streakNumber" : 1,
-        "streakCode" : "L1"
+        "streakCode" : "W1"
       },
       "records" : {
         "divisionRecords" : [ {
@@ -1976,12 +1977,12 @@
           "type" : "Central"
         }, {
           "wins" : 7,
-          "losses" : 4,
+          "losses" : 5,
           "ot" : 3,
           "type" : "Atlantic"
         }, {
-          "wins" : 11,
-          "losses" : 6,
+          "wins" : 12,
+          "losses" : 8,
           "ot" : 2,
           "type" : "Pacific"
         }, {
@@ -1991,13 +1992,13 @@
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 20,
-          "losses" : 6,
+          "wins" : 21,
+          "losses" : 7,
           "ot" : 5,
           "type" : "home"
         }, {
           "wins" : 21,
-          "losses" : 11,
+          "losses" : 13,
           "ot" : 2,
           "type" : "away"
         }, {
@@ -2005,24 +2006,24 @@
           "losses" : 4,
           "type" : "shootOuts"
         }, {
-          "wins" : 7,
-          "losses" : 2,
-          "ot" : 1,
+          "wins" : 6,
+          "losses" : 4,
+          "ot" : 0,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
           "wins" : 17,
-          "losses" : 6,
+          "losses" : 7,
           "ot" : 4,
           "type" : "Eastern"
         }, {
-          "wins" : 24,
-          "losses" : 11,
+          "wins" : 25,
+          "losses" : 13,
           "ot" : 3,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 28,
@@ -2030,33 +2031,33 @@
         "link" : "/api/v1/teams/28"
       },
       "leagueRecord" : {
-        "wins" : 39,
+        "wins" : 41,
         "losses" : 19,
         "ot" : 8,
         "type" : "league"
       },
-      "goalsAgainst" : 206,
-      "goalsScored" : 238,
-      "points" : 86,
+      "goalsAgainst" : 210,
+      "goalsScored" : 246,
+      "points" : 90,
       "divisionRank" : "2",
       "conferenceRank" : "2",
       "leagueRank" : "4",
       "wildCardRank" : "0",
-      "row" : 39,
-      "gamesPlayed" : 66,
+      "row" : 41,
+      "gamesPlayed" : 68,
       "streak" : {
         "streakType" : "wins",
-        "streakNumber" : 2,
-        "streakCode" : "W2"
+        "streakNumber" : 4,
+        "streakCode" : "W4"
       },
       "records" : {
         "divisionRecords" : [ {
-          "wins" : 11,
+          "wins" : 12,
           "losses" : 4,
           "ot" : 0,
           "type" : "Central"
         }, {
-          "wins" : 5,
+          "wins" : 6,
           "losses" : 6,
           "ot" : 2,
           "type" : "Atlantic"
@@ -2072,7 +2073,7 @@
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 21,
+          "wins" : 23,
           "losses" : 5,
           "ot" : 5,
           "type" : "home"
@@ -2086,24 +2087,24 @@
           "losses" : 3,
           "type" : "shootOuts"
         }, {
-          "wins" : 6,
-          "losses" : 3,
+          "wins" : 7,
+          "losses" : 2,
           "ot" : 1,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 13,
+          "wins" : 14,
           "losses" : 11,
           "ot" : 5,
           "type" : "Eastern"
         }, {
-          "wins" : 26,
+          "wins" : 27,
           "losses" : 8,
           "ot" : 3,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 54,
@@ -2111,24 +2112,24 @@
         "link" : "/api/v1/teams/54"
       },
       "leagueRecord" : {
-        "wins" : 36,
-        "losses" : 26,
+        "wins" : 38,
+        "losses" : 27,
         "ot" : 5,
         "type" : "league"
       },
-      "goalsAgainst" : 187,
-      "goalsScored" : 201,
-      "points" : 77,
+      "goalsAgainst" : 196,
+      "goalsScored" : 212,
+      "points" : 81,
       "divisionRank" : "3",
       "conferenceRank" : "5",
-      "leagueRank" : "13",
+      "leagueRank" : "12",
       "wildCardRank" : "0",
-      "row" : 33,
-      "gamesPlayed" : 67,
+      "row" : 35,
+      "gamesPlayed" : 70,
       "streak" : {
-        "streakType" : "wins",
-        "streakNumber" : 4,
-        "streakCode" : "W4"
+        "streakType" : "losses",
+        "streakNumber" : 1,
+        "streakCode" : "L1"
       },
       "records" : {
         "divisionRecords" : [ {
@@ -2142,8 +2143,8 @@
           "ot" : 2,
           "type" : "Atlantic"
         }, {
-          "wins" : 13,
-          "losses" : 5,
+          "wins" : 15,
+          "losses" : 6,
           "ot" : 2,
           "type" : "Pacific"
         }, {
@@ -2153,13 +2154,13 @@
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 20,
+          "wins" : 21,
           "losses" : 10,
           "ot" : 4,
           "type" : "home"
         }, {
-          "wins" : 16,
-          "losses" : 16,
+          "wins" : 17,
+          "losses" : 17,
           "ot" : 1,
           "type" : "away"
         }, {
@@ -2167,8 +2168,8 @@
           "losses" : 2,
           "type" : "shootOuts"
         }, {
-          "wins" : 5,
-          "losses" : 4,
+          "wins" : 6,
+          "losses" : 3,
           "ot" : 1,
           "type" : "lastTen"
         } ],
@@ -2178,13 +2179,13 @@
           "ot" : 3,
           "type" : "Eastern"
         }, {
-          "wins" : 21,
-          "losses" : 13,
+          "wins" : 23,
+          "losses" : 14,
           "ot" : 2,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 53,
@@ -2192,24 +2193,24 @@
         "link" : "/api/v1/teams/53"
       },
       "leagueRecord" : {
-        "wins" : 32,
-        "losses" : 28,
+        "wins" : 34,
+        "losses" : 29,
         "ot" : 5,
         "type" : "league"
       },
-      "goalsAgainst" : 183,
-      "goalsScored" : 176,
-      "points" : 69,
+      "goalsAgainst" : 188,
+      "goalsScored" : 183,
+      "points" : 73,
       "divisionRank" : "4",
       "conferenceRank" : "9",
       "leagueRank" : "19",
       "wildCardRank" : "3",
-      "row" : 28,
-      "gamesPlayed" : 65,
+      "row" : 30,
+      "gamesPlayed" : 68,
       "streak" : {
         "streakType" : "wins",
-        "streakNumber" : 6,
-        "streakCode" : "W6"
+        "streakNumber" : 2,
+        "streakCode" : "W2"
       },
       "records" : {
         "divisionRecords" : [ {
@@ -2223,8 +2224,8 @@
           "ot" : 0,
           "type" : "Atlantic"
         }, {
-          "wins" : 12,
-          "losses" : 8,
+          "wins" : 14,
+          "losses" : 9,
           "ot" : 2,
           "type" : "Pacific"
         }, {
@@ -2234,8 +2235,8 @@
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 15,
-          "losses" : 14,
+          "wins" : 17,
+          "losses" : 15,
           "ot" : 3,
           "type" : "home"
         }, {
@@ -2259,13 +2260,13 @@
           "ot" : 3,
           "type" : "Eastern"
         }, {
-          "wins" : 20,
-          "losses" : 15,
+          "wins" : 22,
+          "losses" : 16,
           "ot" : 2,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 22,
@@ -2273,24 +2274,24 @@
         "link" : "/api/v1/teams/22"
       },
       "leagueRecord" : {
-        "wins" : 29,
-        "losses" : 30,
+        "wins" : 30,
+        "losses" : 31,
         "ot" : 7,
         "type" : "league"
       },
-      "goalsAgainst" : 216,
-      "goalsScored" : 187,
-      "points" : 65,
+      "goalsAgainst" : 221,
+      "goalsScored" : 192,
+      "points" : 67,
       "divisionRank" : "5",
-      "conferenceRank" : "11",
-      "leagueRank" : "24",
-      "wildCardRank" : "5",
-      "row" : 26,
-      "gamesPlayed" : 66,
+      "conferenceRank" : "12",
+      "leagueRank" : "25",
+      "wildCardRank" : "6",
+      "row" : 27,
+      "gamesPlayed" : 68,
       "streak" : {
-        "streakType" : "wins",
-        "streakNumber" : 3,
-        "streakCode" : "W3"
+        "streakType" : "losses",
+        "streakNumber" : 1,
+        "streakCode" : "L1"
       },
       "records" : {
         "divisionRecords" : [ {
@@ -2300,11 +2301,11 @@
           "type" : "Central"
         }, {
           "wins" : 7,
-          "losses" : 6,
+          "losses" : 7,
           "ot" : 1,
           "type" : "Atlantic"
         }, {
-          "wins" : 8,
+          "wins" : 9,
           "losses" : 11,
           "ot" : 2,
           "type" : "Pacific"
@@ -2315,8 +2316,8 @@
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 14,
-          "losses" : 15,
+          "wins" : 15,
+          "losses" : 16,
           "ot" : 2,
           "type" : "home"
         }, {
@@ -2329,24 +2330,24 @@
           "losses" : 2,
           "type" : "shootOuts"
         }, {
-          "wins" : 5,
-          "losses" : 3,
+          "wins" : 6,
+          "losses" : 2,
           "ot" : 2,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
           "wins" : 12,
-          "losses" : 12,
+          "losses" : 13,
           "ot" : 3,
           "type" : "Eastern"
         }, {
-          "wins" : 17,
+          "wins" : 18,
           "losses" : 18,
           "ot" : 4,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 23,
@@ -2354,20 +2355,20 @@
         "link" : "/api/v1/teams/23"
       },
       "leagueRecord" : {
-        "wins" : 27,
-        "losses" : 30,
+        "wins" : 28,
+        "losses" : 32,
         "ot" : 9,
         "type" : "league"
       },
-      "goalsAgainst" : 206,
-      "goalsScored" : 180,
-      "points" : 63,
+      "goalsAgainst" : 217,
+      "goalsScored" : 187,
+      "points" : 65,
       "divisionRank" : "6",
       "conferenceRank" : "13",
       "leagueRank" : "26",
       "wildCardRank" : "7",
-      "row" : 24,
-      "gamesPlayed" : 66,
+      "row" : 25,
+      "gamesPlayed" : 69,
       "streak" : {
         "streakType" : "losses",
         "streakNumber" : 2,
@@ -2380,13 +2381,13 @@
           "ot" : 3,
           "type" : "Central"
         }, {
-          "wins" : 8,
+          "wins" : 9,
           "losses" : 4,
           "ot" : 2,
           "type" : "Atlantic"
         }, {
           "wins" : 9,
-          "losses" : 10,
+          "losses" : 12,
           "ot" : 4,
           "type" : "Pacific"
         }, {
@@ -2396,13 +2397,13 @@
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 14,
-          "losses" : 12,
+          "wins" : 15,
+          "losses" : 13,
           "ot" : 4,
           "type" : "home"
         }, {
           "wins" : 13,
-          "losses" : 18,
+          "losses" : 19,
           "ot" : 5,
           "type" : "away"
         }, {
@@ -2416,18 +2417,18 @@
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 11,
+          "wins" : 12,
           "losses" : 14,
           "ot" : 2,
           "type" : "Eastern"
         }, {
           "wins" : 16,
-          "losses" : 16,
+          "losses" : 18,
           "ot" : 7,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 24,
@@ -2435,39 +2436,39 @@
         "link" : "/api/v1/teams/24"
       },
       "leagueRecord" : {
-        "wins" : 25,
-        "losses" : 32,
+        "wins" : 27,
+        "losses" : 34,
         "ot" : 9,
         "type" : "league"
       },
-      "goalsAgainst" : 203,
-      "goalsScored" : 144,
-      "points" : 59,
+      "goalsAgainst" : 214,
+      "goalsScored" : 161,
+      "points" : 63,
       "divisionRank" : "7",
       "conferenceRank" : "14",
       "leagueRank" : "27",
       "wildCardRank" : "8",
-      "row" : 22,
-      "gamesPlayed" : 66,
+      "row" : 24,
+      "gamesPlayed" : 70,
       "streak" : {
-        "streakType" : "wins",
+        "streakType" : "losses",
         "streakNumber" : 1,
-        "streakCode" : "W1"
+        "streakCode" : "L1"
       },
       "records" : {
         "divisionRecords" : [ {
           "wins" : 7,
-          "losses" : 8,
+          "losses" : 9,
           "ot" : 2,
           "type" : "Central"
         }, {
-          "wins" : 3,
+          "wins" : 4,
           "losses" : 8,
           "ot" : 3,
           "type" : "Atlantic"
         }, {
-          "wins" : 6,
-          "losses" : 10,
+          "wins" : 7,
+          "losses" : 11,
           "ot" : 3,
           "type" : "Pacific"
         }, {
@@ -2477,12 +2478,12 @@
           "type" : "Metropolitan"
         } ],
         "overallRecords" : [ {
-          "wins" : 13,
-          "losses" : 11,
+          "wins" : 14,
+          "losses" : 13,
           "ot" : 8,
           "type" : "home"
         }, {
-          "wins" : 12,
+          "wins" : 13,
           "losses" : 21,
           "ot" : 1,
           "type" : "away"
@@ -2491,24 +2492,24 @@
           "losses" : 2,
           "type" : "shootOuts"
         }, {
-          "wins" : 4,
-          "losses" : 6,
+          "wins" : 3,
+          "losses" : 7,
           "ot" : 0,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
-          "wins" : 12,
+          "wins" : 13,
           "losses" : 14,
           "ot" : 4,
           "type" : "Eastern"
         }, {
-          "wins" : 13,
-          "losses" : 18,
+          "wins" : 14,
+          "losses" : 20,
           "ot" : 5,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     }, {
       "team" : {
         "id" : 26,
@@ -2516,20 +2517,20 @@
         "link" : "/api/v1/teams/26"
       },
       "leagueRecord" : {
-        "wins" : 24,
-        "losses" : 33,
+        "wins" : 25,
+        "losses" : 36,
         "ot" : 8,
         "type" : "league"
       },
-      "goalsAgainst" : 207,
-      "goalsScored" : 158,
-      "points" : 56,
+      "goalsAgainst" : 220,
+      "goalsScored" : 164,
+      "points" : 58,
       "divisionRank" : "8",
       "conferenceRank" : "15",
       "leagueRank" : "29",
       "wildCardRank" : "9",
-      "row" : 22,
-      "gamesPlayed" : 65,
+      "row" : 23,
+      "gamesPlayed" : 69,
       "streak" : {
         "streakType" : "wins",
         "streakNumber" : 1,
@@ -2538,17 +2539,17 @@
       "records" : {
         "divisionRecords" : [ {
           "wins" : 7,
-          "losses" : 8,
+          "losses" : 9,
           "ot" : 2,
           "type" : "Central"
         }, {
           "wins" : 2,
-          "losses" : 9,
+          "losses" : 10,
           "ot" : 3,
           "type" : "Atlantic"
         }, {
-          "wins" : 8,
-          "losses" : 8,
+          "wins" : 9,
+          "losses" : 9,
           "ot" : 2,
           "type" : "Pacific"
         }, {
@@ -2559,12 +2560,12 @@
         } ],
         "overallRecords" : [ {
           "wins" : 13,
-          "losses" : 15,
+          "losses" : 17,
           "ot" : 3,
           "type" : "home"
         }, {
-          "wins" : 11,
-          "losses" : 18,
+          "wins" : 12,
+          "losses" : 19,
           "ot" : 5,
           "type" : "away"
         }, {
@@ -2572,24 +2573,24 @@
           "losses" : 3,
           "type" : "shootOuts"
         }, {
-          "wins" : 1,
+          "wins" : 2,
           "losses" : 6,
-          "ot" : 3,
+          "ot" : 2,
           "type" : "lastTen"
         } ],
         "conferenceRecords" : [ {
           "wins" : 9,
-          "losses" : 17,
+          "losses" : 18,
           "ot" : 4,
           "type" : "Eastern"
         }, {
-          "wins" : 15,
-          "losses" : 16,
+          "wins" : 16,
+          "losses" : 18,
           "ot" : 4,
           "type" : "Western"
         } ]
       },
-      "lastUpdated" : "2019-03-04T21:46:33Z"
+      "lastUpdated" : "2019-03-11T01:20:41Z"
     } ]
   } ]
 }
