@@ -104,12 +104,11 @@ func (c ByWl) Less(i, j int) bool {
 	if c[i].Wl == c[j].Wl {
 		if c[i].GP == c[j].GP {
 			return c[i].GD > c[j].GD
-		} else {
-			return c[i].GP < c[j].GP
 		}
-	} else {
-		return c[i].Wl > c[j].Wl
+		return c[i].GP < c[j].GP
+
 	}
+	return c[i].Wl > c[j].Wl
 }
 
 type ByDivision []Team
@@ -122,18 +121,15 @@ func (c ByDivision) Less(i, j int) bool {
 			if c[i].Wl == c[j].Wl {
 				if c[i].GP == c[j].GP {
 					return c[i].GD > c[j].GD
-				} else {
-					return c[i].GP < c[j].GP
 				}
-			} else {
-				return c[i].Wl > c[j].Wl
+				return c[i].GP < c[j].GP
+
 			}
-		} else {
-			return c[i].Division < c[j].Division
+			return c[i].Wl > c[j].Wl
 		}
-	} else {
-		return c[i].Conference < c[j].Conference
+		return c[i].Division < c[j].Division
 	}
+	return c[i].Conference < c[j].Conference
 }
 
 type ByConference []Team
@@ -145,15 +141,12 @@ func (c ByConference) Less(i, j int) bool {
 		if c[i].Wl == c[j].Wl {
 			if c[i].GP == c[j].GP {
 				return c[i].GD > c[j].GD
-			} else {
-				return c[i].GP < c[j].GP
 			}
-		} else {
-			return c[i].Wl > c[j].Wl
+			return c[i].GP < c[j].GP
 		}
-	} else {
-		return c[i].Conference < c[j].Conference
+		return c[i].Wl > c[j].Wl
 	}
+	return c[i].Conference < c[j].Conference
 }
 
 func main() {
@@ -222,6 +215,8 @@ func main() {
 		fmt.Print(" ")
 		fmt.Printf("%-25v", s.Team)
 		fmt.Print(" ")
+		fmt.Printf("%4d", s.GP)
+		fmt.Print(" ")
 		fmt.Printf("%4d", s.Wl)
 		fmt.Print(" ")
 		fmt.Printf("%4d", s.WL10)
@@ -255,6 +250,8 @@ func main() {
 			fmt.Print(" ")
 			fmt.Printf("%-25v", s.Team)
 			fmt.Print(" ")
+			fmt.Printf("%4d", s.GP)
+			fmt.Print(" ")
 			fmt.Printf("%4d", s.Wl)
 			fmt.Print(" ")
 			fmt.Printf("%4d", s.WL10)
@@ -278,6 +275,8 @@ func main() {
 		fmt.Printf("%2d", ln)
 		fmt.Print(" ")
 		fmt.Printf("%-25v", s.Team)
+		fmt.Print(" ")
+		fmt.Printf("%4d", s.GP)
 		fmt.Print(" ")
 		fmt.Printf("%4d", s.Wl)
 		fmt.Print(" ")
@@ -304,6 +303,8 @@ func main() {
 		fmt.Print(" ")
 		fmt.Printf("%-25v", s.Team)
 		fmt.Print(" ")
+		fmt.Printf("%4d", s.GP)
+		fmt.Print(" ")
 		fmt.Printf("%4d", s.Wl)
 		fmt.Print(" ")
 		fmt.Printf("%4d", s.WL10)
@@ -323,6 +324,8 @@ func main() {
 		fmt.Print(" ")
 		fmt.Printf("%-25v", s.Team)
 		fmt.Print(" ")
+		fmt.Printf("%4d", s.GP)
+		fmt.Print(" ")
 		fmt.Printf("%4d", s.Wl)
 		fmt.Print(" ")
 		fmt.Printf("%4d", s.WL10)
@@ -337,7 +340,8 @@ func main() {
 
 func section(title string) {
 	fmt.Println()
-	fmt.Println(strings.Repeat("=", 45))
+	fmt.Println(strings.Repeat("=", 50))
 	fmt.Println(title)
-	fmt.Println(strings.Repeat("=", 45))
+	fmt.Println(strings.Repeat("=", 50))
+	fmt.Println("	                       GP  +/-  +/10   GD")
 }
