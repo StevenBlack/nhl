@@ -96,6 +96,23 @@ type Team struct {
 	WCFlag     int
 }
 
+// sort by wins and losses, last 10 games, league wide
+type By10Wl []Team
+
+func (c By10Wl) Len() int      { return len(c) }
+func (c By10Wl) Swap(i, j int) { c[i], c[j] = c[j], c[i] }
+func (c By10Wl) Less(i, j int) bool {
+	if c[i].WL10 == c[j].WL10 {
+		if c[i].GP == c[j].GP {
+			return c[i].GD > c[j].GD
+		}
+		return c[i].GP < c[j].GP
+
+	}
+	return c[i].WL10 > c[j].WL10
+}
+
+// sort by wins and losses, league wide
 type ByWl []Team
 
 func (c ByWl) Len() int      { return len(c) }
@@ -111,6 +128,7 @@ func (c ByWl) Less(i, j int) bool {
 	return c[i].Wl > c[j].Wl
 }
 
+// sort by division
 type ByDivision []Team
 
 func (c ByDivision) Len() int      { return len(c) }
@@ -132,6 +150,7 @@ func (c ByDivision) Less(i, j int) bool {
 	return c[i].Conference < c[j].Conference
 }
 
+// sort by conference
 type ByConference []Team
 
 func (c ByConference) Len() int      { return len(c) }
@@ -334,7 +353,26 @@ func main() {
 		fmt.Println()
 	}
 
-	// fmt.Print(standings)
+	sort.Sort(By10Wl(standings))
+
+	section("NHL Hot or Not, last 10")
+
+	ln = 0
+	for _, s := range standings {
+		ln = ln + 1
+		fmt.Printf("%2d", ln)
+		fmt.Print(" ")
+		fmt.Printf("%-25v", s.Team)
+		fmt.Print(" ")
+		fmt.Printf("%4d", s.GP)
+		fmt.Print(" ")
+		fmt.Printf("%4d", s.Wl)
+		fmt.Print(" ")
+		fmt.Printf("%4d", s.WL10)
+		fmt.Print(" ")
+		fmt.Printf("%5d", s.GD)
+		fmt.Println()
+	}
 
 }
 
