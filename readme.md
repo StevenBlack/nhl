@@ -1,15 +1,19 @@
-# NHL team plus/minus standings
+# NHL wins minus losses plus/minus standings
+
+This is a personal side-project, written in [Go](https://golang.org/).
 
 I'm unmoved by traditional National Hockey League (NHL) reporting
-which tallies standings by points.
+which [tallies standings by points](https://www.nhl.com/standings/).
 
-Given the disparity, league wide, in games played, total points
-is always misleading.
+Given the disparity, league wide, in games played throughout the season, 
+total points ranking is always misleading.
 
 The only metric that matters is, wins minus losses.
 
-To make the playoffs, generally 96 points gets you there.
+To make the playoffs, generally a team needs 96 points to make it.
 Given an 82-game regular season, 96 points is +14 — a differential of +14, wins minus losses.
+
+This is what this repo gives you: plaintext plus/minus NHL standings in the command window.
 
 To run this:
 
@@ -19,12 +23,23 @@ To run this:
 
 ## Sample output
 
+Refresh local data:
+
 ```
 $ ./refresh
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
 100 68720    0 68720    0     0   309k      0 --:--:-- --:--:-- --:--:--  309k
+```
 
+Show NHL plus/minus team standings in various ways.
+
+* `GP`: games played.
+* `+/-`: plus/minus, season so far.
+* `+/10`: plus/minus, last 10 games played.
+* `GD`: team goal differential, season so far.
+
+```
 $ ./nhl
 
 ==================================================
