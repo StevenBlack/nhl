@@ -10,14 +10,16 @@ total points ranking is always misleading.
 
 The only metric that matters is, wins minus losses.
 
-To make the playoffs, generally a team needs 96 points to make it.
-Given an 82-game regular season, 96 points is +14 — a differential of +14, wins minus losses.
+Generally a team needs 96 points to make the playoffs. 
+Over an 82-game regular season, 96 points is +14 — a differential of +14, 
+wins minus losses.
 
-This is what this repo gives you: plaintext plus/minus NHL standings in the command window.
+This is what this repo gives you: plaintext plus/minus NHL standings 
+in the command window.
 
-To run this:
 
-* `./refresh` fetches stats and refreshes local data.
+* `./refresh` fetches stats and refreshes local data.  To run this, 
+you'll need [`curl`](https://curl.haxx.se/) installed.
 * `./nhl` lists various facets of NHL standings, using local data.
 
 
