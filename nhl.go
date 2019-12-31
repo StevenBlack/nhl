@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
+	"net/http"
 	"sort"
 	"strings"
 	"time"
@@ -141,7 +142,6 @@ func (c ByDivision) Less(i, j int) bool {
 					return c[i].GD > c[j].GD
 				}
 				return c[i].GP < c[j].GP
-
 			}
 			return c[i].Wl > c[j].Wl
 		}
@@ -169,7 +169,25 @@ func (c ByConference) Less(i, j int) bool {
 }
 
 func main() {
-	data, err := ioutil.ReadFile("./data.json")
+	url := "https://statsapi.web.nhl.com/api/v1/standings?expand=standings.record"
+
+	client := http.Client{
+		Timeout: time.Second * 2, // Maximum of 2 secs
+	}
+
+	req, err := http.NewRequest(http.MethodGet, url, nil)
+	if err != nil {
+		fmt.Print(err)
+	}
+
+	req.Header.Set("User-Agent", "nhl-statsapi")
+
+	res, getErr := client.Do(req)
+	if getErr != nil {
+		fmt.Print(getErr)
+	}
+
+	data, err := ioutil.ReadAll(res.Body)
 	if err != nil {
 		fmt.Print(err)
 	}
