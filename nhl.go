@@ -2,13 +2,19 @@ package main
 
 import (
 	"encoding/json"
+	"flag"
 	"fmt"
 	"io/ioutil"
 	"net/http"
+	"os"
 	"sort"
 	"strings"
 	"time"
 )
+
+const Author = "Steven Black (https://github.com/StevenBlack/nhl)"
+const AppVersion = "Version 0.1.0 (Dec 31 2019)"
+const Description = "NHL plaintext standings (+/-)"
 
 type Stats struct {
 	Copyright string `json:"copyright"`
@@ -169,6 +175,28 @@ func (c ByConference) Less(i, j int) bool {
 }
 
 func main() {
+
+	version := flag.Bool("v", false, "prints current ersion")
+	description := flag.Bool("d", false, "prints a description of this utility")
+	author := flag.Bool("a", false, "prints the author information")
+
+	flag.Parse()
+
+	if *version {
+		fmt.Println(AppVersion)
+		os.Exit(0)
+	}
+
+	if *description {
+		fmt.Println(Description)
+		os.Exit(0)
+	}
+
+	if *author {
+		fmt.Println(Author)
+		os.Exit(0)
+	}
+
 	url := "https://statsapi.web.nhl.com/api/v1/standings?expand=standings.record"
 
 	client := http.Client{
