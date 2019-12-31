@@ -26,7 +26,7 @@ Show NHL plus/minus team standings in various ways.
 * `+/10`: plus/minus, last 10 games played.
 * `GD`: team goal differential, season so far.
 
-```
+``` bash
 $ ./nhl
 
 ==================================================
@@ -241,6 +241,18 @@ NHL Hot or Not, last 10
 30 Edmonton Oilers             41    3   -5   -11
 31 Detroit Red Wings           40  -19   -6   -70
 
+```
+
+## Usage (command line flags)
+
+```bash
+$ ./nhl -h
+
+Usage of ./nhl:
+  -h prints this help info
+  -a prints the author information
+  -d prints a description of this utility
+  -v prints current ersion
 ```
 
 ### Tech used
