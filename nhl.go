@@ -248,18 +248,7 @@ func main() {
 			fmt.Println(s.Division, "Division")
 		}
 		ln = ln + 1
-		fmt.Printf("%2d", ln)
-		fmt.Print(" ")
-		fmt.Printf("%-25v", s.Team)
-		fmt.Print(" ")
-		fmt.Printf("%4d", s.GP)
-		fmt.Print(" ")
-		fmt.Printf("%4d", s.Wl)
-		fmt.Print(" ")
-		fmt.Printf("%4d", s.WL10)
-		fmt.Print(" ")
-		fmt.Printf("%5d", s.GD)
-		fmt.Println()
+		teamline(ln, s)
 	}
 
 	section("NHL Wildcard Standings")
@@ -283,18 +272,7 @@ func main() {
 		ln = ln + 1
 		if ln < 4 {
 			standings[i].WCFlag = 1
-			fmt.Printf("%2d", ln)
-			fmt.Print(" ")
-			fmt.Printf("%-25v", s.Team)
-			fmt.Print(" ")
-			fmt.Printf("%4d", s.GP)
-			fmt.Print(" ")
-			fmt.Printf("%4d", s.Wl)
-			fmt.Print(" ")
-			fmt.Printf("%4d", s.WL10)
-			fmt.Print(" ")
-			fmt.Printf("%5d", s.GD)
-			fmt.Println()
+			teamline(ln, s)
 		}
 	}
 	sort.Sort(ByConference(standings))
@@ -309,18 +287,7 @@ func main() {
 			continue
 		}
 		ln = ln + 1
-		fmt.Printf("%2d", ln)
-		fmt.Print(" ")
-		fmt.Printf("%-25v", s.Team)
-		fmt.Print(" ")
-		fmt.Printf("%4d", s.GP)
-		fmt.Print(" ")
-		fmt.Printf("%4d", s.Wl)
-		fmt.Print(" ")
-		fmt.Printf("%4d", s.WL10)
-		fmt.Print(" ")
-		fmt.Printf("%5d", s.GD)
-		fmt.Println()
+		teamline(ln, s)
 	}
 
 	sort.Sort(ByConference(standings))
@@ -336,18 +303,7 @@ func main() {
 			fmt.Println(s.Conference, "Conference")
 		}
 		ln = ln + 1
-		fmt.Printf("%2d", ln)
-		fmt.Print(" ")
-		fmt.Printf("%-25v", s.Team)
-		fmt.Print(" ")
-		fmt.Printf("%4d", s.GP)
-		fmt.Print(" ")
-		fmt.Printf("%4d", s.Wl)
-		fmt.Print(" ")
-		fmt.Printf("%4d", s.WL10)
-		fmt.Print(" ")
-		fmt.Printf("%5d", s.GD)
-		fmt.Println()
+		teamline(ln, s)
 	}
 
 	sort.Sort(ByWl(standings))
@@ -357,18 +313,7 @@ func main() {
 	ln = 0
 	for _, s := range standings {
 		ln = ln + 1
-		fmt.Printf("%2d", ln)
-		fmt.Print(" ")
-		fmt.Printf("%-25v", s.Team)
-		fmt.Print(" ")
-		fmt.Printf("%4d", s.GP)
-		fmt.Print(" ")
-		fmt.Printf("%4d", s.Wl)
-		fmt.Print(" ")
-		fmt.Printf("%4d", s.WL10)
-		fmt.Print(" ")
-		fmt.Printf("%5d", s.GD)
-		fmt.Println()
+		teamline(ln, s)
 	}
 
 	sort.Sort(By10Wl(standings))
@@ -378,20 +323,23 @@ func main() {
 	ln = 0
 	for _, s := range standings {
 		ln = ln + 1
-		fmt.Printf("%2d", ln)
-		fmt.Print(" ")
-		fmt.Printf("%-25v", s.Team)
-		fmt.Print(" ")
-		fmt.Printf("%4d", s.GP)
-		fmt.Print(" ")
-		fmt.Printf("%4d", s.Wl)
-		fmt.Print(" ")
-		fmt.Printf("%4d", s.WL10)
-		fmt.Print(" ")
-		fmt.Printf("%5d", s.GD)
-		fmt.Println()
+		teamline(ln, s)
 	}
+}
 
+func teamline(ln int, s Team) {
+	fmt.Printf("%2d", ln)
+	fmt.Print(" ")
+	fmt.Printf("%-25v", s.Team)
+	fmt.Print(" ")
+	fmt.Printf("%4d", s.GP)
+	fmt.Print(" ")
+	fmt.Printf("%4d", s.Wl)
+	fmt.Print(" ")
+	fmt.Printf("%4d", s.WL10)
+	fmt.Print(" ")
+	fmt.Printf("%5d", s.GD)
+	fmt.Println()
 }
 
 func section(title string) {
