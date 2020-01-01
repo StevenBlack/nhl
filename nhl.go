@@ -358,22 +358,22 @@ func main() {
 func teamline(ln int, s Team) {
 	fmt.Printf("%2d", ln)
 	fmt.Print(" ")
-	fmt.Printf("%-25v", s.Team)
-	fmt.Print(" ")
-	fmt.Printf("%4d", s.GP)
+        fmt.Printf("%-21v", s.Team)
 	fmt.Print(" ")
 	fmt.Printf("%4d", s.Wl)
 	fmt.Print(" ")
 	fmt.Printf("%4d", s.WL10)
 	fmt.Print(" ")
-	fmt.Printf("%5d", s.GD)
+        fmt.Printf("%4d", s.GP)
+        fmt.Print(" ")
+        fmt.Printf("%4d", s.GD)
 	fmt.Println()
 }
 
 func section(title string) {
 	fmt.Println()
-	fmt.Println(strings.Repeat("=", 50))
+        fmt.Println(strings.Repeat("=", 44))
 	fmt.Println(title)
-	fmt.Println(strings.Repeat("=", 50))
-	fmt.Println("	                       GP  +/-  +/10   GD")
+        fmt.Println(strings.Repeat("=", 44))
+        fmt.Println("	                  +/-  +/10  GP   GD")
 }
