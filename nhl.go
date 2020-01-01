@@ -176,7 +176,7 @@ func (c ByConference) Less(i, j int) bool {
 
 func main() {
 
-	version := flag.Bool("v", false, "prints current ersion")
+        version := flag.Bool("v", false, "prints current version")
 	description := flag.Bool("d", false, "prints a description of this utility")
 	author := flag.Bool("a", false, "prints the author information")
 
