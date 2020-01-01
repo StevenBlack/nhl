@@ -13,7 +13,7 @@ import (
 )
 
 const Author = "Steven Black (https://github.com/StevenBlack/nhl)"
-const AppVersion = "Version 0.1.0 (Dec 31 2019)"
+const AppVersion = "Version 0.1.1 (Jan 1 2019)"
 const Description = "NHL plaintext standings (+/-)"
 
 type Stats struct {
@@ -176,7 +176,7 @@ func (c ByConference) Less(i, j int) bool {
 
 func main() {
 
-        version := flag.Bool("v", false, "prints current version")
+	version := flag.Bool("v", false, "prints current version")
 	description := flag.Bool("d", false, "prints a description of this utility")
 	author := flag.Bool("a", false, "prints the author information")
 
@@ -358,22 +358,22 @@ func main() {
 func teamline(ln int, s Team) {
 	fmt.Printf("%2d", ln)
 	fmt.Print(" ")
-        fmt.Printf("%-21v", s.Team)
+	fmt.Printf("%-21v", s.Team)
 	fmt.Print(" ")
 	fmt.Printf("%4d", s.Wl)
 	fmt.Print(" ")
 	fmt.Printf("%4d", s.WL10)
 	fmt.Print(" ")
-        fmt.Printf("%4d", s.GP)
-        fmt.Print(" ")
-        fmt.Printf("%4d", s.GD)
+	fmt.Printf("%4d", s.GP)
+	fmt.Print(" ")
+	fmt.Printf("%4d", s.GD)
 	fmt.Println()
 }
 
 func section(title string) {
 	fmt.Println()
-        fmt.Println(strings.Repeat("=", 44))
+	fmt.Println(strings.Repeat("=", 44))
 	fmt.Println(title)
-        fmt.Println(strings.Repeat("=", 44))
-        fmt.Println("	                  +/-  +/10  GP   GD")
+	fmt.Println(strings.Repeat("=", 44))
+	fmt.Println("	                  +/-  +/10  GP   GD")
 }
