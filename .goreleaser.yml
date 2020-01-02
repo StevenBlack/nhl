@@ -5,3 +5,14 @@ builds:
       - windows
       - darwin
       - linux
+
+release:
+  prerelease: auto
+  disable: false
+
+changelog:
+  # set it to true if you wish to skip the changelog generation
+  skip: false
+  # could either be asc, desc or empty
+  # Default is empty
+  sort: asc
