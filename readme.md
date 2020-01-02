@@ -29,217 +29,217 @@ Show NHL plus/minus team standings in various ways.
 ``` bash
 $ ./nhl
 
-==================================================
+============================================
 NHL Division Standings
-==================================================
-	                       GP  +/-  +/10   GD
+============================================
+	                  +/-  +/10  GP   GD
 
 Eastern Conference
 
 Atlantic Division
- 1 Boston Bruins               40   17    1    34
- 2 Tampa Bay Lightning         37    7    3    15
- 3 Florida Panthers            38    7    2     8
- 4 Toronto Maple Leafs         40    7    7    11
- 5 Montréal Canadiens          39    3    2     2
- 6 Buffalo Sabres              40    1   -1    -8
- 7 Ottawa Senators             40   -3    2   -21
- 8 Detroit Red Wings           40  -19   -6   -70
+ 1 Boston Bruins           17    2   41   33
+ 2 Tampa Bay Lightning      8    5   38   17
+ 3 Toronto Maple Leafs      8    7   41   14
+ 4 Florida Panthers         6    0   39    5
+ 5 Montréal Canadiens       2    0   40    0
+ 6 Buffalo Sabres           0   -3   41  -10
+ 7 Ottawa Senators         -3    2   40  -21
+ 8 Detroit Red Wings      -18   -4   41  -68
 
 Metropolitan Division
- 1 Washington Capitals         40   19    2    25
- 2 New York Islanders          37   14    1    13
- 3 Pittsburgh Penguins         39   13    6    32
- 4 Philadelphia Flyers         39   10    2    11
- 5 Carolina Hurricanes         39    9    3    22
- 6 New York Rangers            38    4    1    -1
- 7 Columbus Blue Jackets       39    3    6   -10
- 8 New Jersey Devils           38   -6   -1   -37
+ 1 Washington Capitals     18    0   41   24
+ 2 New York Islanders      15    3   38   14
+ 3 Pittsburgh Penguins     13    6   39   32
+ 4 Carolina Hurricanes     10    3   40   24
+ 5 Philadelphia Flyers      9    0   40    9
+ 6 Columbus Blue Jackets    4    6   40   -7
+ 7 New York Rangers         3   -1   39   -3
+ 8 New Jersey Devils       -5    1   39  -36
 
 Western Conference
 
 Central Division
- 1 St. Louis Blues             40   18    6    23
- 2 Colorado Avalanche          39   11    0    28
- 3 Dallas Stars                40    8    3     6
- 4 Winnipeg Jets               39    6   -1     2
- 5 Nashville Predators         38    4    1     5
- 6 Minnesota Wild              40    3    1    -8
- 7 Chicago Blackhawks          40    0    0   -16
+ 1 St. Louis Blues         17    6   41   21
+ 2 Colorado Avalanche      10   -1   40   25
+ 3 Dallas Stars             9    3   41    8
+ 4 Winnipeg Jets            7   -1   40    5
+ 5 Nashville Predators      3   -1   39    3
+ 6 Minnesota Wild           2    0   41  -11
+ 7 Chicago Blackhawks       1    2   41  -14
 
 Pacific Division
- 1 Vancouver Canucks           40    6    2    13
- 2 Vegas Golden Knights        42    6    3     6
- 3 Arizona Coyotes             41    5   -2     8
- 4 Calgary Flames              41    4    1   -11
- 5 Edmonton Oilers             41    3   -5   -11
- 6 Anaheim Ducks               39   -2   -1   -18
- 7 San Jose Sharks             40   -3   -5   -28
- 8 Los Angeles Kings           41   -5    2   -25
+ 1 Vegas Golden Knights     7    3   43    9
+ 2 Vancouver Canucks        6    2   40   13
+ 3 Arizona Coyotes          6   -2   42   10
+ 4 Edmonton Oilers          4   -4   42   -9
+ 5 Calgary Flames           3   -1   42  -13
+ 6 Anaheim Ducks           -3   -1   40  -21
+ 7 San Jose Sharks         -4   -5   41  -30
+ 8 Los Angeles Kings       -4    2   42  -23
 
-==================================================
+============================================
 NHL Wildcard Standings
-==================================================
-	                       GP  +/-  +/10   GD
+============================================
+	                  +/-  +/10  GP   GD
 
 Eastern Conference
 
 Atlantic Division
- 1 Boston Bruins               40   17    1    34
- 2 Tampa Bay Lightning         37    7    3    15
- 3 Florida Panthers            38    7    2     8
+ 1 Boston Bruins           17    2   41   33
+ 2 Tampa Bay Lightning      8    5   38   17
+ 3 Toronto Maple Leafs      8    7   41   14
 
 Metropolitan Division
- 1 Washington Capitals         40   19    2    25
- 2 New York Islanders          37   14    1    13
- 3 Pittsburgh Penguins         39   13    6    32
+ 1 Washington Capitals     18    0   41   24
+ 2 New York Islanders      15    3   38   14
+ 3 Pittsburgh Penguins     13    6   39   32
 
 Western Conference
 
 Central Division
- 1 St. Louis Blues             40   18    6    23
- 2 Colorado Avalanche          39   11    0    28
- 3 Dallas Stars                40    8    3     6
+ 1 St. Louis Blues         17    6   41   21
+ 2 Colorado Avalanche      10   -1   40   25
+ 3 Dallas Stars             9    3   41    8
 
 Pacific Division
- 1 Vancouver Canucks           40    6    2    13
- 2 Vegas Golden Knights        42    6    3     6
- 3 Arizona Coyotes             41    5   -2     8
+ 1 Vegas Golden Knights     7    3   43    9
+ 2 Vancouver Canucks        6    2   40   13
+ 3 Arizona Coyotes          6   -2   42   10
 
 Eastern Conference Wildcards
- 7 Philadelphia Flyers         39   10    2    11
- 8 Carolina Hurricanes         39    9    3    22
- 9 Toronto Maple Leafs         40    7    7    11
-10 New York Rangers            38    4    1    -1
-11 Montréal Canadiens          39    3    2     2
-12 Columbus Blue Jackets       39    3    6   -10
-13 Buffalo Sabres              40    1   -1    -8
-14 Ottawa Senators             40   -3    2   -21
-15 New Jersey Devils           38   -6   -1   -37
-16 Detroit Red Wings           40  -19   -6   -70
+ 7 Carolina Hurricanes     10    3   40   24
+ 8 Philadelphia Flyers      9    0   40    9
+ 9 Florida Panthers         6    0   39    5
+10 Columbus Blue Jackets    4    6   40   -7
+11 New York Rangers         3   -1   39   -3
+12 Montréal Canadiens       2    0   40    0
+13 Buffalo Sabres           0   -3   41  -10
+14 Ottawa Senators         -3    2   40  -21
+15 New Jersey Devils       -5    1   39  -36
+16 Detroit Red Wings      -18   -4   41  -68
 
 Western Conference Wildcards
- 7 Winnipeg Jets               39    6   -1     2
- 8 Nashville Predators         38    4    1     5
- 9 Calgary Flames              41    4    1   -11
-10 Minnesota Wild              40    3    1    -8
-11 Edmonton Oilers             41    3   -5   -11
-12 Chicago Blackhawks          40    0    0   -16
-13 Anaheim Ducks               39   -2   -1   -18
-14 San Jose Sharks             40   -3   -5   -28
-15 Los Angeles Kings           41   -5    2   -25
+ 7 Winnipeg Jets            7   -1   40    5
+ 8 Edmonton Oilers          4   -4   42   -9
+ 9 Nashville Predators      3   -1   39    3
+10 Calgary Flames           3   -1   42  -13
+11 Minnesota Wild           2    0   41  -11
+12 Chicago Blackhawks       1    2   41  -14
+13 Anaheim Ducks           -3   -1   40  -21
+14 San Jose Sharks         -4   -5   41  -30
+15 Los Angeles Kings       -4    2   42  -23
 
-==================================================
+============================================
 NHL Conference Standings
-==================================================
-	                       GP  +/-  +/10   GD
+============================================
+	                  +/-  +/10  GP   GD
 
 Eastern Conference
- 1 Washington Capitals         40   19    2    25
- 2 Boston Bruins               40   17    1    34
- 3 New York Islanders          37   14    1    13
- 4 Pittsburgh Penguins         39   13    6    32
- 5 Philadelphia Flyers         39   10    2    11
- 6 Carolina Hurricanes         39    9    3    22
- 7 Tampa Bay Lightning         37    7    3    15
- 8 Florida Panthers            38    7    2     8
- 9 Toronto Maple Leafs         40    7    7    11
-10 New York Rangers            38    4    1    -1
-11 Montréal Canadiens          39    3    2     2
-12 Columbus Blue Jackets       39    3    6   -10
-13 Buffalo Sabres              40    1   -1    -8
-14 Ottawa Senators             40   -3    2   -21
-15 New Jersey Devils           38   -6   -1   -37
-16 Detroit Red Wings           40  -19   -6   -70
+ 1 Washington Capitals     18    0   41   24
+ 2 Boston Bruins           17    2   41   33
+ 3 New York Islanders      15    3   38   14
+ 4 Pittsburgh Penguins     13    6   39   32
+ 5 Carolina Hurricanes     10    3   40   24
+ 6 Philadelphia Flyers      9    0   40    9
+ 7 Tampa Bay Lightning      8    5   38   17
+ 8 Toronto Maple Leafs      8    7   41   14
+ 9 Florida Panthers         6    0   39    5
+10 Columbus Blue Jackets    4    6   40   -7
+11 New York Rangers         3   -1   39   -3
+12 Montréal Canadiens       2    0   40    0
+13 Buffalo Sabres           0   -3   41  -10
+14 Ottawa Senators         -3    2   40  -21
+15 New Jersey Devils       -5    1   39  -36
+16 Detroit Red Wings      -18   -4   41  -68
 
 Western Conference
- 1 St. Louis Blues             40   18    6    23
- 2 Colorado Avalanche          39   11    0    28
- 3 Dallas Stars                40    8    3     6
- 4 Winnipeg Jets               39    6   -1     2
- 5 Vancouver Canucks           40    6    2    13
- 6 Vegas Golden Knights        42    6    3     6
- 7 Arizona Coyotes             41    5   -2     8
- 8 Nashville Predators         38    4    1     5
- 9 Calgary Flames              41    4    1   -11
-10 Minnesota Wild              40    3    1    -8
-11 Edmonton Oilers             41    3   -5   -11
-12 Chicago Blackhawks          40    0    0   -16
-13 Anaheim Ducks               39   -2   -1   -18
-14 San Jose Sharks             40   -3   -5   -28
-15 Los Angeles Kings           41   -5    2   -25
+ 1 St. Louis Blues         17    6   41   21
+ 2 Colorado Avalanche      10   -1   40   25
+ 3 Dallas Stars             9    3   41    8
+ 4 Winnipeg Jets            7   -1   40    5
+ 5 Vegas Golden Knights     7    3   43    9
+ 6 Vancouver Canucks        6    2   40   13
+ 7 Arizona Coyotes          6   -2   42   10
+ 8 Edmonton Oilers          4   -4   42   -9
+ 9 Nashville Predators      3   -1   39    3
+10 Calgary Flames           3   -1   42  -13
+11 Minnesota Wild           2    0   41  -11
+12 Chicago Blackhawks       1    2   41  -14
+13 Anaheim Ducks           -3   -1   40  -21
+14 San Jose Sharks         -4   -5   41  -30
+15 Los Angeles Kings       -4    2   42  -23
 
-==================================================
+============================================
 NHL League Standings
-==================================================
-	                       GP  +/-  +/10   GD
- 1 Washington Capitals         40   19    2    25
- 2 St. Louis Blues             40   18    6    23
- 3 Boston Bruins               40   17    1    34
- 4 New York Islanders          37   14    1    13
- 5 Pittsburgh Penguins         39   13    6    32
- 6 Colorado Avalanche          39   11    0    28
- 7 Philadelphia Flyers         39   10    2    11
- 8 Carolina Hurricanes         39    9    3    22
- 9 Dallas Stars                40    8    3     6
-10 Tampa Bay Lightning         37    7    3    15
-11 Florida Panthers            38    7    2     8
-12 Toronto Maple Leafs         40    7    7    11
-13 Winnipeg Jets               39    6   -1     2
-14 Vancouver Canucks           40    6    2    13
-15 Vegas Golden Knights        42    6    3     6
-16 Arizona Coyotes             41    5   -2     8
-17 Nashville Predators         38    4    1     5
-18 New York Rangers            38    4    1    -1
-19 Calgary Flames              41    4    1   -11
-20 Montréal Canadiens          39    3    2     2
-21 Columbus Blue Jackets       39    3    6   -10
-22 Minnesota Wild              40    3    1    -8
-23 Edmonton Oilers             41    3   -5   -11
-24 Buffalo Sabres              40    1   -1    -8
-25 Chicago Blackhawks          40    0    0   -16
-26 Anaheim Ducks               39   -2   -1   -18
-27 Ottawa Senators             40   -3    2   -21
-28 San Jose Sharks             40   -3   -5   -28
-29 Los Angeles Kings           41   -5    2   -25
-30 New Jersey Devils           38   -6   -1   -37
-31 Detroit Red Wings           40  -19   -6   -70
+============================================
+	                  +/-  +/10  GP   GD
+ 1 Washington Capitals     18    0   41   24
+ 2 Boston Bruins           17    2   41   33
+ 3 St. Louis Blues         17    6   41   21
+ 4 New York Islanders      15    3   38   14
+ 5 Pittsburgh Penguins     13    6   39   32
+ 6 Colorado Avalanche      10   -1   40   25
+ 7 Carolina Hurricanes     10    3   40   24
+ 8 Philadelphia Flyers      9    0   40    9
+ 9 Dallas Stars             9    3   41    8
+10 Tampa Bay Lightning      8    5   38   17
+11 Toronto Maple Leafs      8    7   41   14
+12 Winnipeg Jets            7   -1   40    5
+13 Vegas Golden Knights     7    3   43    9
+14 Florida Panthers         6    0   39    5
+15 Vancouver Canucks        6    2   40   13
+16 Arizona Coyotes          6   -2   42   10
+17 Columbus Blue Jackets    4    6   40   -7
+18 Edmonton Oilers          4   -4   42   -9
+19 Nashville Predators      3   -1   39    3
+20 New York Rangers         3   -1   39   -3
+21 Calgary Flames           3   -1   42  -13
+22 Montréal Canadiens       2    0   40    0
+23 Minnesota Wild           2    0   41  -11
+24 Chicago Blackhawks       1    2   41  -14
+25 Buffalo Sabres           0   -3   41  -10
+26 Anaheim Ducks           -3   -1   40  -21
+27 Ottawa Senators         -3    2   40  -21
+28 San Jose Sharks         -4   -5   41  -30
+29 Los Angeles Kings       -4    2   42  -23
+30 New Jersey Devils       -5    1   39  -36
+31 Detroit Red Wings      -18   -4   41  -68
 
-==================================================
+============================================
 NHL Hot or Not, last 10
-==================================================
-	                       GP  +/-  +/10   GD
- 1 Toronto Maple Leafs         40    7    7    11
- 2 Pittsburgh Penguins         39   13    6    32
- 3 Columbus Blue Jackets       39    3    6   -10
- 4 St. Louis Blues             40   18    6    23
- 5 Tampa Bay Lightning         37    7    3    15
- 6 Carolina Hurricanes         39    9    3    22
- 7 Dallas Stars                40    8    3     6
- 8 Vegas Golden Knights        42    6    3     6
- 9 Florida Panthers            38    7    2     8
-10 Philadelphia Flyers         39   10    2    11
-11 Montréal Canadiens          39    3    2     2
-12 Washington Capitals         40   19    2    25
-13 Vancouver Canucks           40    6    2    13
-14 Ottawa Senators             40   -3    2   -21
-15 Los Angeles Kings           41   -5    2   -25
-16 New York Islanders          37   14    1    13
-17 Nashville Predators         38    4    1     5
-18 New York Rangers            38    4    1    -1
-19 Boston Bruins               40   17    1    34
-20 Minnesota Wild              40    3    1    -8
-21 Calgary Flames              41    4    1   -11
-22 Colorado Avalanche          39   11    0    28
-23 Chicago Blackhawks          40    0    0   -16
-24 New Jersey Devils           38   -6   -1   -37
-25 Winnipeg Jets               39    6   -1     2
-26 Anaheim Ducks               39   -2   -1   -18
-27 Buffalo Sabres              40    1   -1    -8
-28 Arizona Coyotes             41    5   -2     8
-29 San Jose Sharks             40   -3   -5   -28
-30 Edmonton Oilers             41    3   -5   -11
-31 Detroit Red Wings           40  -19   -6   -70
+============================================
+	                  +/-  +/10  GP   GD
+ 1 Toronto Maple Leafs      8    7   41   14
+ 2 Pittsburgh Penguins     13    6   39   32
+ 3 Columbus Blue Jackets    4    6   40   -7
+ 4 St. Louis Blues         17    6   41   21
+ 5 Tampa Bay Lightning      8    5   38   17
+ 6 New York Islanders      15    3   38   14
+ 7 Carolina Hurricanes     10    3   40   24
+ 8 Dallas Stars             9    3   41    8
+ 9 Vegas Golden Knights     7    3   43    9
+10 Vancouver Canucks        6    2   40   13
+11 Ottawa Senators         -3    2   40  -21
+12 Boston Bruins           17    2   41   33
+13 Chicago Blackhawks       1    2   41  -14
+14 Los Angeles Kings       -4    2   42  -23
+15 New Jersey Devils       -5    1   39  -36
+16 Florida Panthers         6    0   39    5
+17 Philadelphia Flyers      9    0   40    9
+18 Montréal Canadiens       2    0   40    0
+19 Washington Capitals     18    0   41   24
+20 Minnesota Wild           2    0   41  -11
+21 Nashville Predators      3   -1   39    3
+22 New York Rangers         3   -1   39   -3
+23 Colorado Avalanche      10   -1   40   25
+24 Winnipeg Jets            7   -1   40    5
+25 Anaheim Ducks           -3   -1   40  -21
+26 Calgary Flames           3   -1   42  -13
+27 Arizona Coyotes          6   -2   42   10
+28 Buffalo Sabres           0   -3   41  -10
+29 Detroit Red Wings      -18   -4   41  -68
+30 Edmonton Oilers          4   -4   42   -9
+31 San Jose Sharks         -4   -5   41  -30
 
 ```
 
