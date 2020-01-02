@@ -1,0 +1,7 @@
+project_name: nhl
+builds:
+  - binary: nhl
+    goos:
+      - windows
+      - darwin
+      - linux
