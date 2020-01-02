@@ -13,7 +13,7 @@ import (
 )
 
 const Author = "Steven Black (https://github.com/StevenBlack/nhl)"
-const AppVersion = "Version 0.1.1 (Jan 1 2019)"
+const AppVersion = "Version 0.1.3 (Jan 1 2019)"
 const Description = "NHL plaintext standings (+/-)"
 
 type Stats struct {
@@ -208,7 +208,7 @@ func main() {
 		fmt.Print(err)
 	}
 
-	req.Header.Set("User-Agent", "nhl-statsapi")
+	req.Header.Set("User-Agent", "nhl-stats-api")
 
 	res, getErr := client.Do(req)
 	if getErr != nil {
