@@ -248,7 +248,7 @@ func main() {
 				Team:       tr.Team.Name,
 				W:          lr.Wins,
 				L:          lr.Losses,
-				Wl:         (lr.Wins - lr.Losses),
+                                Wl:         lr.Wins - lr.Losses,
 				WL10:       wl10,
 				GP:         tr.GamesPlayed,
 				GD:         tr.GoalsScored - tr.GoalsAgainst}
