@@ -7,6 +7,7 @@
     "selected": false,
     "aliases": [
       "devils",
+      "devs",
       "new jersey",
       "jersey",
       "njd",
@@ -43,6 +44,7 @@
     "selected": false,
     "aliases": [
       "rangers",
+      "broadway",
       "blueshirts",
       "new york",
       "ny",
@@ -83,6 +85,7 @@
     "aliases": [
       "penguins",
       "pens",
+      "guins",
       "pittsburgh",
       "pitt",
       "pit",
@@ -102,6 +105,7 @@
       "bruins",
       "bs",
       "b's",
+      "bears",
       "boston",
       "bos",
       "atlantic",
@@ -118,6 +122,8 @@
     "selected": false,
     "aliases": [
       "sabres",
+      "sabes",
+      "sabs",
       "buffalo",
       "buff",
       "buf",
@@ -135,7 +141,9 @@
     "selected": false,
     "aliases": [
       "canadiens",
+      "canadien",
       "habs",
+      "ch",
       "montréal",
       "mtl",
       "atlantic",
@@ -170,6 +178,7 @@
     "aliases": [
       "maple leafs",
       "leafs",
+      "leaves",
       "buds",
       "toronto",
       "tor",
@@ -188,6 +197,8 @@
     "aliases": [
       "hurricanes",
       "canes",
+      "bunch",
+      "jerks",
       "carolina",
       "car",
       "metropolitan",
@@ -204,6 +215,8 @@
     "selected": false,
     "aliases": [
       "panthers",
+      "cats",
+      "rats",
       "florida",
       "fla",
       "atlantic",
@@ -291,6 +304,7 @@
       "predators",
       "preds",
       "nashville",
+      "smashville",
       "nsh",
       "central",
       "cen",
@@ -325,6 +339,8 @@
     "selected": false,
     "aliases": [
       "flames",
+      "fire",
+      "flamers",
       "calgary",
       "cgy",
       "pacific",
@@ -392,6 +408,7 @@
     "selected": false,
     "aliases": [
       "ducks",
+      "mallards",
       "anaheim",
       "ana",
       "pacific",
@@ -408,6 +425,7 @@
     "selected": false,
     "aliases": [
       "stars",
+      "sherrifs",
       "dallas",
       "dal",
       "central",
@@ -440,6 +458,8 @@
     "selected": false,
     "aliases": [
       "sharks",
+      "fins",
+      "fish",
       "teal",
       "san jose",
       "sjs",
@@ -512,6 +532,7 @@
       "desert",
       "dogs",
       "arizona",
+      "phoenix",
       "ari",
       "pacific",
       "pac",
