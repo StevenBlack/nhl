@@ -16,77 +16,79 @@ const Author = "Steven Black (https://github.com/StevenBlack/nhl)"
 const AppVersion = "Version 0.1.3 (Jan 1 2019)"
 const Description = "NHL plaintext standings and stats"
 
-type Stats struct {
-	Copyright string `json:"copyright"`
-	Records   []struct {
-		StandingsType string `json:"standingsType"`
-		League        struct {
-			ID   int    `json:"id"`
-			Name string `json:"name"`
-			Link string `json:"link"`
-		} `json:"league"`
-		Division struct {
-			ID           int    `json:"id"`
-			Name         string `json:"name"`
-			NameShort    string `json:"nameShort"`
-			Link         string `json:"link"`
-			Abbreviation string `json:"abbreviation"`
-		} `json:"division"`
-		Conference struct {
-			ID   int    `json:"id"`
-			Name string `json:"name"`
-			Link string `json:"link"`
-		} `json:"conference"`
-		TeamRecords []struct {
-			Team struct {
+type (
+	Stats struct {
+		Copyright string `json:"copyright"`
+		Records   []struct {
+			StandingsType string `json:"standingsType"`
+			League        struct {
 				ID   int    `json:"id"`
 				Name string `json:"name"`
 				Link string `json:"link"`
-			} `json:"team"`
-			LeagueRecord struct {
-				Wins   int    `json:"wins"`
-				Losses int    `json:"losses"`
-				Ot     int    `json:"ot"`
-				Type   string `json:"type"`
-			} `json:"leagueRecord"`
-			GoalsAgainst   int    `json:"goalsAgainst"`
-			GoalsScored    int    `json:"goalsScored"`
-			Points         int    `json:"points"`
-			DivisionRank   string `json:"divisionRank"`
-			ConferenceRank string `json:"conferenceRank"`
-			LeagueRank     string `json:"leagueRank"`
-			WildCardRank   string `json:"wildCardRank"`
-			Row            int    `json:"row"`
-			GamesPlayed    int    `json:"gamesPlayed"`
-			Streak         struct {
-				StreakType   string `json:"streakType"`
-				StreakNumber int    `json:"streakNumber"`
-				StreakCode   string `json:"streakCode"`
-			} `json:"streak"`
-			Records struct {
-				DivisionRecords []struct {
+			} `json:"league"`
+			Division struct {
+				ID           int    `json:"id"`
+				Name         string `json:"name"`
+				NameShort    string `json:"nameShort"`
+				Link         string `json:"link"`
+				Abbreviation string `json:"abbreviation"`
+			} `json:"division"`
+			Conference struct {
+				ID   int    `json:"id"`
+				Name string `json:"name"`
+				Link string `json:"link"`
+			} `json:"conference"`
+			TeamRecords []struct {
+				Team struct {
+					ID   int    `json:"id"`
+					Name string `json:"name"`
+					Link string `json:"link"`
+				} `json:"team"`
+				LeagueRecord struct {
 					Wins   int    `json:"wins"`
 					Losses int    `json:"losses"`
 					Ot     int    `json:"ot"`
 					Type   string `json:"type"`
-				} `json:"divisionRecords"`
-				OverallRecords []struct {
-					Wins   int    `json:"wins"`
-					Losses int    `json:"losses"`
-					Ot     int    `json:"ot,omitempty"`
-					Type   string `json:"type"`
-				} `json:"overallRecords"`
-				ConferenceRecords []struct {
-					Wins   int    `json:"wins"`
-					Losses int    `json:"losses"`
-					Ot     int    `json:"ot"`
-					Type   string `json:"type"`
-				} `json:"conferenceRecords"`
-			} `json:"records"`
-			LastUpdated time.Time `json:"lastUpdated"`
-		} `json:"teamRecords"`
-	} `json:"records"`
-}
+				} `json:"leagueRecord"`
+				GoalsAgainst   int    `json:"goalsAgainst"`
+				GoalsScored    int    `json:"goalsScored"`
+				Points         int    `json:"points"`
+				DivisionRank   string `json:"divisionRank"`
+				ConferenceRank string `json:"conferenceRank"`
+				LeagueRank     string `json:"leagueRank"`
+				WildCardRank   string `json:"wildCardRank"`
+				Row            int    `json:"row"`
+				GamesPlayed    int    `json:"gamesPlayed"`
+				Streak         struct {
+					StreakType   string `json:"streakType"`
+					StreakNumber int    `json:"streakNumber"`
+					StreakCode   string `json:"streakCode"`
+				} `json:"streak"`
+				Records struct {
+					DivisionRecords []struct {
+						Wins   int    `json:"wins"`
+						Losses int    `json:"losses"`
+						Ot     int    `json:"ot"`
+						Type   string `json:"type"`
+					} `json:"divisionRecords"`
+					OverallRecords []struct {
+						Wins   int    `json:"wins"`
+						Losses int    `json:"losses"`
+						Ot     int    `json:"ot,omitempty"`
+						Type   string `json:"type"`
+					} `json:"overallRecords"`
+					ConferenceRecords []struct {
+						Wins   int    `json:"wins"`
+						Losses int    `json:"losses"`
+						Ot     int    `json:"ot"`
+						Type   string `json:"type"`
+					} `json:"conferenceRecords"`
+				} `json:"records"`
+				LastUpdated time.Time `json:"lastUpdated"`
+			} `json:"teamRecords"`
+		} `json:"records"`
+	}
+)
 
 type Team struct {
 	Conference string
@@ -180,7 +182,28 @@ func main() {
 	description := flag.Bool("d", false, "prints a description of this utility")
 	author := flag.Bool("a", false, "prints the author information")
 
+	scoringCommand := flag.NewFlagSet("scoring", flag.ExitOnError)
+	scoringFlag := scoringCommand.String("question", "", "Question that you are asking for")
+
+	if len(os.Args) > 1 {
+		switch os.Args[1] {
+		case "scoring":
+			scoringCommand.Parse(os.Args[2:])
+		default:
+			fmt.Printf("%q is not valid command.\n", os.Args[1])
+			os.Exit(2)
+		}
+	}
+
 	flag.Parse()
+
+	if scoringCommand.Parsed() {
+		if *scoringFlag == "" {
+			fmt.Println("Please supply the scoring flags")
+			return
+		}
+		fmt.Printf("You asked: %q\n", *scoringFlag)
+	}
 
 	if *version {
 		fmt.Println(AppVersion)
@@ -248,7 +271,7 @@ func main() {
 				Team:       tr.Team.Name,
 				W:          lr.Wins,
 				L:          lr.Losses,
-                                Wl:         lr.Wins - lr.Losses,
+				Wl:         lr.Wins - lr.Losses,
 				WL10:       wl10,
 				GP:         tr.GamesPlayed,
 				GD:         tr.GoalsScored - tr.GoalsAgainst}
