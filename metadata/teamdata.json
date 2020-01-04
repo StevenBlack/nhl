@@ -1,311 +1,539 @@
 [
-{
-  "id": 1,
-  "abbreviation": "njd",
-  "city": "New Jersey",
-  "alias": "Devils",
-  "div": "metropolitan",
-  "divshort": "metro",
-  "conference": "eastern",
-  "selected": false
-},
-{
-  "id": 2,
-  "abbreviation": "nyi",
-  "city": "New York",
-  "alias": "Islanders",
-  "div": "metropolitan",
-  "divshort": "metro",
-  "conference": "eastern",
-  "selected": false
-},
-{
-  "id": 3,
-  "abbreviation": "nyr",
-  "city": "New York",
-  "alias": "Rangers",
-  "div": "metropolitan",
-  "divshort": "metro",
-  "conference": "eastern",
-  "selected": false
-},
-{
-  "id": 4,
-  "abbreviation": "phi",
-  "city": "Philadelphia",
-  "alias": "Flyers",
-  "div": "metropolitan",
-  "divshort": "metro",
-  "conference": "eastern",
-  "selected": false
-},
-{
-  "id": 5,
-  "abbreviation": "pit",
-  "city": "Pittsburgh",
-  "alias": "Penguins",
-  "div": "metropolitan",
-  "divshort": "metro",
-  "conference": "eastern",
-  "selected": false
-},
-{
-  "id": 6,
-  "abbreviation": "bos",
-  "city": "Boston",
-  "alias": "Bruins",
-  "div": "atlantic",
-  "divshort": "atl",
-  "conference": "eastern",
-  "selected": false
-},
-{
-  "id": 7,
-  "abbreviation": "buf",
-  "city": "Buffalo",
-  "alias": "Sabres",
-  "div": "atlantic",
-  "divshort": "atl",
-  "conference": "eastern",
-  "selected": false
-},
-{
-  "id": 8,
-  "abbreviation": "mtl",
-  "city": "Montréal",
-  "alias": "Canadiens",
-  "div": "atlantic",
-  "divshort": "atl",
-  "conference": "eastern",
-  "selected": false
-},
-{
-  "id": 9,
-  "abbreviation": "ott",
-  "city": "Ottawa",
-  "alias": "Senators",
-  "div": "atlantic",
-  "divshort": "atl",
-  "conference": "eastern",
-  "selected": false
-},
-{
-  "id": 10,
-  "abbreviation": "tor",
-  "city": "Toronto",
-  "alias": "Maple Leafs",
-  "div": "atlantic",
-  "divshort": "atl",
-  "conference": "eastern",
-  "selected": false
-},
-{
-  "id": 12,
-  "abbreviation": "car",
-  "city": "Carolina",
-  "alias": "Hurricanes",
-  "div": "metropolitan",
-  "divshort": "metro",
-  "conference": "eastern",
-  "selected": false
-},
-{
-  "id": 13,
-  "abbreviation": "fla",
-  "city": "Florida",
-  "alias": "Panthers",
-  "div": "atlantic",
-  "divshort": "atl",
-  "conference": "eastern",
-  "selected": false
-},
-{
-  "id": 14,
-  "abbreviation": "tbl",
-  "city": "Tampa Bay",
-  "alias": "Lightning",
-  "div": "atlantic",
-  "divshort": "atl",
-  "conference": "eastern",
-  "selected": false
-},
-{
-  "id": 15,
-  "abbreviation": "wsh",
-  "city": "Washington",
-  "alias": "Capitals",
-  "div": "metropolitan",
-  "divshort": "metro",
-  "conference": "eastern",
-  "selected": false
-},
-{
-  "id": 16,
-  "abbreviation": "chi",
-  "city": "Chicago",
-  "alias": "Blackhawks",
-  "div": "central",
-  "divshort": "cen",
-  "conference": "western",
-  "selected": false
-},
-{
-  "id": 17,
-  "abbreviation": "det",
-  "city": "Detroit",
-  "alias": "Red Wings",
-  "div": "atlantic",
-  "divshort": "atl",
-  "conference": "eastern",
-  "selected": false
-},
-{
-  "id": 18,
-  "abbreviation": "nsh",
-  "city": "Nashville",
-  "alias": "Predators",
-  "div": "central",
-  "divshort": "cen",
-  "conference": "western",
-  "selected": false
-},
-{
-  "id": 19,
-  "abbreviation": "stl",
-  "city": "St. Louis",
-  "alias": "Blues",
-  "div": "central",
-  "divshort": "cen",
-  "conference": "western",
-  "selected": false
-},
-{
-  "id": 20,
-  "abbreviation": "cgy",
-  "city": "Calgary",
-  "alias": "Flames",
-  "div": "pacific",
-  "divshort": "pac",
-  "conference": "western",
-  "selected": false
-},
-{
-  "id": 21,
-  "abbreviation": "col",
-  "city": "Colorado",
-  "alias": "Avalanche",
-  "div": "central",
-  "divshort": "cen",
-  "conference": "western",
-  "selected": false
-},
-{
-  "id": 22,
-  "abbreviation": "edm",
-  "city": "Edmonton",
-  "alias": "Oilers",
-  "div": "pacific",
-  "divshort": "pac",
-  "conference": "western",
-  "selected": false
-},
-{
-  "id": 23,
-  "abbreviation": "van",
-  "city": "Vancouver",
-  "alias": "Canucks",
-  "div": "pacific",
-  "divshort": "pac",
-  "conference": "western",
-  "selected": false
-},
-{
-  "id": 24,
-  "abbreviation": "ana",
-  "city": "Anaheim",
-  "alias": "Ducks",
-  "div": "pacific",
-  "divshort": "pac",
-  "conference": "western",
-  "selected": false
-},
-{
-  "id": 25,
-  "abbreviation": "dal",
-  "city": "Dallas",
-  "alias": "Stars",
-  "div": "central",
-  "divshort": "cen",
-  "conference": "western",
-  "selected": false
-},
-{
-  "id": 26,
-  "abbreviation": "lak",
-  "city": "Los Angeles",
-  "alias": "Kings",
-  "div": "pacific",
-  "divshort": "pac",
-  "conference": "western",
-  "selected": false
-},
-{
-  "id": 28,
-  "abbreviation": "sjs",
-  "city": "San Jose",
-  "alias": "Sharks",
-  "div": "pacific",
-  "divshort": "pac",
-  "conference": "western",
-  "selected": false
-},
-{
-  "id": 29,
-  "abbreviation": "cbj",
-  "city": "Columbus",
-  "alias": "Blue Jackets",
-  "div": "metropolitan",
-  "divshort": "metro",
-  "conference": "eastern",
-  "selected": false
-},
-{
-  "id": 30,
-  "abbreviation": "min",
-  "city": "Minnesota",
-  "alias": "Wild",
-  "div": "central",
-  "divshort": "cen",
-  "conference": "western",
-  "selected": false
-},
-{
-  "id": 52,
-  "abbreviation": "wpg",
-  "city": "Winnipeg",
-  "alias": "Jets",
-  "div": "central",
-  "divshort": "cen",
-  "conference": "western",
-  "selected": false
-},
-{
-  "id": 53,
-  "abbreviation": "ari",
-  "city": "Arizona",
-  "alias": "Coyotes",
-  "div": "pacific",
-  "divshort": "pac",
-  "conference": "western",
-  "selected": false
-},
-{
-  "id": 54,
-  "abbreviation": "vgk",
-  "city": "Vegas",
-  "alias": "Golden Knights",
-  "div": "pacific",
-  "divshort": "pac",
-  "conference": "western",
-  "selected": false
-}
+  {
+    "id": 1,
+    "abbreviation": "njd",
+    "city": "New Jersey",
+    "alias": "Devils",
+    "selected": false,
+    "aliases": [
+      "devils",
+      "new jersey",
+      "jersey",
+      "njd",
+      "metropolitan",
+      "metro",
+      "eastern",
+      "east"
+    ]
+  },
+  {
+    "id": 2,
+    "abbreviation": "nyi",
+    "city": "New York",
+    "alias": "Islanders",
+    "selected": false,
+    "aliases": [
+      "islanders",
+      "isles",
+      "new york",
+      "ny",
+      "newyork",
+      "nyi",
+      "metropolitan",
+      "metro",
+      "eastern",
+      "east"
+    ]
+  },
+  {
+    "id": 3,
+    "abbreviation": "nyr",
+    "city": "New York",
+    "alias": "Rangers",
+    "selected": false,
+    "aliases": [
+      "rangers",
+      "blueshirts",
+      "new york",
+      "ny",
+      "newyork",
+      "nyr",
+      "metropolitan",
+      "metro",
+      "eastern",
+      "east"
+    ]
+  },
+  {
+    "id": 4,
+    "abbreviation": "phi",
+    "city": "Philadelphia",
+    "alias": "Flyers",
+    "selected": false,
+    "aliases": [
+      "flyers",
+      "fliers",
+      "broad",
+      "street",
+      "bullies",
+      "philadelphia",
+      "phi",
+      "metropolitan",
+      "metro",
+      "eastern",
+      "east"
+    ]
+  },
+  {
+    "id": 5,
+    "abbreviation": "pit",
+    "city": "Pittsburgh",
+    "alias": "Penguins",
+    "selected": false,
+    "aliases": [
+      "penguins",
+      "pens",
+      "pittsburgh",
+      "pitt",
+      "pit",
+      "metropolitan",
+      "metro",
+      "eastern",
+      "east"
+    ]
+  },
+  {
+    "id": 6,
+    "abbreviation": "bos",
+    "city": "Boston",
+    "alias": "Bruins",
+    "selected": false,
+    "aliases": [
+      "bruins",
+      "bs",
+      "b's",
+      "boston",
+      "bos",
+      "atlantic",
+      "atl",
+      "eastern",
+      "east"
+    ]
+  },
+  {
+    "id": 7,
+    "abbreviation": "buf",
+    "city": "Buffalo",
+    "alias": "Sabres",
+    "selected": false,
+    "aliases": [
+      "sabres",
+      "buffalo",
+      "buff",
+      "buf",
+      "atlantic",
+      "atl",
+      "eastern",
+      "east"
+    ]
+  },
+  {
+    "id": 8,
+    "abbreviation": "mtl",
+    "city": "Montréal",
+    "alias": "Canadiens",
+    "selected": false,
+    "aliases": [
+      "canadiens",
+      "habs",
+      "montréal",
+      "mtl",
+      "atlantic",
+      "atl",
+      "eastern",
+      "east"
+    ]
+  },
+  {
+    "id": 9,
+    "abbreviation": "ott",
+    "city": "Ottawa",
+    "alias": "Senators",
+    "selected": false,
+    "aliases": [
+      "senators",
+      "sens",
+      "ottawa",
+      "ott",
+      "atlantic",
+      "atl",
+      "eastern",
+      "east"
+    ]
+  },
+  {
+    "id": 10,
+    "abbreviation": "tor",
+    "city": "Toronto",
+    "alias": "Maple Leafs",
+    "selected": false,
+    "aliases": [
+      "maple leafs",
+      "leafs",
+      "buds",
+      "toronto",
+      "tor",
+      "atlantic",
+      "atl",
+      "eastern",
+      "east"
+    ]
+  },
+  {
+    "id": 12,
+    "abbreviation": "car",
+    "city": "Carolina",
+    "alias": "Hurricanes",
+    "selected": false,
+    "aliases": [
+      "hurricanes",
+      "canes",
+      "carolina",
+      "car",
+      "metropolitan",
+      "metro",
+      "eastern",
+      "east"
+    ]
+  },
+  {
+    "id": 13,
+    "abbreviation": "fla",
+    "city": "Florida",
+    "alias": "Panthers",
+    "selected": false,
+    "aliases": [
+      "panthers",
+      "florida",
+      "fla",
+      "atlantic",
+      "atl",
+      "eastern",
+      "east"
+    ]
+  },
+  {
+    "id": 14,
+    "abbreviation": "tbl",
+    "city": "Tampa Bay",
+    "alias": "Lightning",
+    "selected": false,
+    "aliases": [
+      "lightning",
+      "bolts",
+      "tampa bay",
+      "tpa",
+      "tbl",
+      "atlantic",
+      "atl",
+      "eastern",
+      "east"
+    ]
+  },
+  {
+    "id": 15,
+    "abbreviation": "wsh",
+    "city": "Washington",
+    "alias": "Capitals",
+    "selected": false,
+    "aliases": [
+      "capitals",
+      "caps",
+      "washington",
+      "wsh",
+      "metropolitan",
+      "metro",
+      "eastern",
+      "east"
+    ]
+  },
+  {
+    "id": 16,
+    "abbreviation": "chi",
+    "city": "Chicago",
+    "alias": "Blackhawks",
+    "selected": false,
+    "aliases": [
+      "blackhawks",
+      "hawks",
+      "chicago",
+      "chi",
+      "central",
+      "cen",
+      "western",
+      "west"
+    ]
+  },
+  {
+    "id": 17,
+    "abbreviation": "det",
+    "city": "Detroit",
+    "alias": "Red Wings",
+    "selected": false,
+    "aliases": [
+      "red wings",
+      "wings",
+      "detroit",
+      "det",
+      "atlantic",
+      "atl",
+      "eastern",
+      "east"
+    ]
+  },
+  {
+    "id": 18,
+    "abbreviation": "nsh",
+    "city": "Nashville",
+    "alias": "Predators",
+    "selected": false,
+    "aliases": [
+      "predators",
+      "preds",
+      "nashville",
+      "nsh",
+      "central",
+      "cen",
+      "western",
+      "west"
+    ]
+  },
+  {
+    "id": 19,
+    "abbreviation": "stl",
+    "city": "St. Louis",
+    "alias": "Blues",
+    "selected": false,
+    "aliases": [
+      "blues",
+      "notes",
+      "st. louis",
+      "stlouis",
+      "st-louis",
+      "stl",
+      "central",
+      "cen",
+      "western",
+      "west"
+    ]
+  },
+  {
+    "id": 20,
+    "abbreviation": "cgy",
+    "city": "Calgary",
+    "alias": "Flames",
+    "selected": false,
+    "aliases": [
+      "flames",
+      "calgary",
+      "cgy",
+      "pacific",
+      "pac",
+      "western",
+      "west"
+    ]
+  },
+  {
+    "id": 21,
+    "abbreviation": "col",
+    "city": "Colorado",
+    "alias": "Avalanche",
+    "selected": false,
+    "aliases": [
+      "avalanche",
+      "avs",
+      "colorado",
+      "col",
+      "central",
+      "cen",
+      "western",
+      "west"
+    ]
+  },
+  {
+    "id": 22,
+    "abbreviation": "edm",
+    "city": "Edmonton",
+    "alias": "Oilers",
+    "selected": false,
+    "aliases": [
+      "oilers",
+      "oil",
+      "edmonton",
+      "edm",
+      "pacific",
+      "pac",
+      "western",
+      "west"
+    ]
+  },
+  {
+    "id": 23,
+    "abbreviation": "van",
+    "city": "Vancouver",
+    "alias": "Canucks",
+    "selected": false,
+    "aliases": [
+      "canucks",
+      "nucks",
+      "vancouver",
+      "van",
+      "pacific",
+      "pac",
+      "western",
+      "west"
+    ]
+  },
+  {
+    "id": 24,
+    "abbreviation": "ana",
+    "city": "Anaheim",
+    "alias": "Ducks",
+    "selected": false,
+    "aliases": [
+      "ducks",
+      "anaheim",
+      "ana",
+      "pacific",
+      "pac",
+      "western",
+      "west"
+    ]
+  },
+  {
+    "id": 25,
+    "abbreviation": "dal",
+    "city": "Dallas",
+    "alias": "Stars",
+    "selected": false,
+    "aliases": [
+      "stars",
+      "dallas",
+      "dal",
+      "central",
+      "cen",
+      "western",
+      "west"
+    ]
+  },
+  {
+    "id": 26,
+    "abbreviation": "lak",
+    "city": "Los Angeles",
+    "alias": "Kings",
+    "selected": false,
+    "aliases": [
+      "kings",
+      "los angeles",
+      "lak",
+      "pacific",
+      "pac",
+      "western",
+      "west"
+    ]
+  },
+  {
+    "id": 28,
+    "abbreviation": "sjs",
+    "city": "San Jose",
+    "alias": "Sharks",
+    "selected": false,
+    "aliases": [
+      "sharks",
+      "teal",
+      "san jose",
+      "sjs",
+      "pacific",
+      "pac",
+      "western",
+      "west"
+    ]
+  },
+  {
+    "id": 29,
+    "abbreviation": "cbj",
+    "city": "Columbus",
+    "alias": "Blue Jackets",
+    "selected": false,
+    "aliases": [
+      "blue jackets",
+      "jackets",
+      "columbus",
+      "cbj",
+      "metropolitan",
+      "metro",
+      "eastern",
+      "east"
+    ]
+  },
+  {
+    "id": 30,
+    "abbreviation": "min",
+    "city": "Minnesota",
+    "alias": "Wild",
+    "selected": false,
+    "aliases": [
+      "wild",
+      "minnesota",
+      "minny",
+      "min",
+      "central",
+      "cen",
+      "western",
+      "west"
+    ]
+  },
+  {
+    "id": 52,
+    "abbreviation": "wpg",
+    "city": "Winnipeg",
+    "alias": "Jets",
+    "selected": false,
+    "aliases": [
+      "jets",
+      "winnipeg",
+      "winterpeg",
+      "wpg",
+      "central",
+      "cen",
+      "western",
+      "west"
+    ]
+  },
+  {
+    "id": 53,
+    "abbreviation": "ari",
+    "city": "Arizona",
+    "alias": "Coyotes",
+    "selected": false,
+    "aliases": [
+      "coyotes",
+      "yotes",
+      "desert",
+      "dogs",
+      "arizona",
+      "ari",
+      "pacific",
+      "pac",
+      "western",
+      "west"
+    ]
+  },
+  {
+    "id": 54,
+    "abbreviation": "vgk",
+    "city": "Vegas",
+    "alias": "Golden Knights",
+    "selected": false,
+    "aliases": [
+      "golden knights",
+      "knights",
+      "vegas",
+      "vgk",
+      "pacific",
+      "pac",
+      "western",
+      "west"
+    ]
+  }
+]
