@@ -14,7 +14,7 @@ import (
 
 const Author = "Steven Black (https://github.com/StevenBlack/nhl)"
 const AppVersion = "Version 0.1.3 (Jan 1 2019)"
-const Description = "NHL plaintext standings (+/-)"
+const Description = "NHL plaintext standings and stats"
 
 type Stats struct {
 	Copyright string `json:"copyright"`
