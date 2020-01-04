@@ -1,4 +1,4 @@
-"teams": [
+[
 {
   "id": 1,
   "abbreviation": "njd",
@@ -309,4 +309,3 @@
   "conference": "western",
   "selected": false
 }
-]
