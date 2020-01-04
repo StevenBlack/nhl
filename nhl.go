@@ -190,8 +190,8 @@ func main() {
 		case "scoring":
 			scoringCommand.Parse(os.Args[2:])
 		default:
-			fmt.Printf("%q is not valid command.\n", os.Args[1])
-			os.Exit(2)
+			// fmt.Printf("%q is not valid command.\n", os.Args[1])
+			// os.Exit(2)
 		}
 	}
 
