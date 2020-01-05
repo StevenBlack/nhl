@@ -218,10 +218,8 @@ func main() {
 	// PROCESS OPTIONS
 	options := os.Args[1:]
     // lowercase the options
-	n := 0
-	for range options {
+	for n := range options {
 		options[n] = strings.ToLower(options[n])
-		n++
 	}
 	// deduplicate the options
 	sort.Strings(options)
@@ -239,9 +237,14 @@ func main() {
 	options = options[:j+1]
 
 	// establish settings
-	scoringAliases := [...]string{"assists", "score", "scoring", "goals", "points"}
+	scoringAliases := [...]string{"assists", "scoring", "goals", "points"}
 	if (anySorted(options, scoringAliases)) {
 		mode = "scoring"
+	}
+
+	scoresAliases := [...]string{"score", "scores"}
+	if (anySorted(options, scoresAliases)) {
+		mode = "scores"
 	}
 
 	scheduleAliases := [...]string{"sched", "schedule", "sked"}
