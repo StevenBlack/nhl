@@ -7,14 +7,19 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
+	"reflect"
 	"sort"
 	"strings"
 	"time"
+
 )
 
 const author = "Steven Black (https://github.com/StevenBlack/nhl)"
 const appVersion = "Version 0.1.3 (Jan 1 2019)"
 const description = "NHL plaintext standings and stats"
+
+var mode = "standings"
+
 
 type teams []struct {
 	ID           int      `json:"id"`
@@ -187,33 +192,11 @@ func (c ByConference) Less(i, j int) bool {
 
 func main() {
 
+	// Process flags
 	version := flag.Bool("v", false, "prints current version")
 	description := flag.Bool("d", false, "prints a description of this utility")
 	author := flag.Bool("a", false, "prints the author information")
-
-	scoringCommand := flag.NewFlagSet("scoring", flag.ExitOnError)
-	scoringFlag := scoringCommand.String("question", "", "Question that you are asking for")
-
-	if len(os.Args) > 1 {
-		switch os.Args[1] {
-		case "scoring":
-			scoringCommand.Parse(os.Args[2:])
-		default:
-			// fmt.Printf("%q is not valid command.\n", os.Args[1])
-			// os.Exit(2)
-		}
-	}
-
 	flag.Parse()
-
-	if scoringCommand.Parsed() {
-		if *scoringFlag == "" {
-			fmt.Println("Please supply the scoring flags")
-			return
-		}
-		fmt.Printf("You asked: %q\n", *scoringFlag)
-	}
-
 	if *version {
 		fmt.Println(appVersion)
 		os.Exit(0)
@@ -227,6 +210,43 @@ func main() {
 	if *author {
 		fmt.Println(author)
 		os.Exit(0)
+	}
+
+	// defaults
+	mode = "standings"
+
+	// PROCESS OPTIONS
+	options := os.Args[1:]
+    // lowercase the options
+	n := 0
+	for range options {
+		options[n] = strings.ToLower(options[n])
+		n++
+	}
+	// deduplicate the options
+	sort.Strings(options)
+	j := 0
+	for i := 1; i < len(options); i++ {
+		if options[j] == options[i] {
+			continue
+		}
+		j++
+		// preserve the original data
+		// in[i], in[j] = in[j], in[i]
+		// only set what is required
+		options[j] = options[i]
+	}
+	options = options[:j+1]
+
+	// establish settings
+	scoringAliases := [...]string{"assists", "score", "scoring", "goals", "points"}
+	if (anySorted(options, scoringAliases)) {
+		mode = "scoring"
+	}
+
+	scheduleAliases := [...]string{"sched", "schedule", "sked"}
+    if any(options, scheduleAliases) {
+		mode = "schedule"
 	}
 
 	url := "https://statsapi.web.nhl.com/api/v1/standings?expand=standings.record"
@@ -258,7 +278,7 @@ func main() {
 		fmt.Println("error:", err)
 	}
 
-	// create amd load standings
+	// create and load standings
 	standings := make([]Team, 0)
 
 	for _, r := range stats.Records {
@@ -408,4 +428,47 @@ func section(title string) {
 	fmt.Println(title)
 	fmt.Println(strings.Repeat("=", 44))
 	fmt.Println("	                  +/-  +/10  GP   GD")
+}
+
+// any has complexity: O(n^2)
+func any(a interface{}, b interface{}) bool {
+	av := reflect.ValueOf(a)
+
+	for i := 0; i < av.Len(); i++ {
+		el := av.Index(i).Interface()
+		if contains(b, el) {
+			return true
+		}
+	}
+
+	return false
+}
+
+// anySorted has complexity: O(n * log(n)), a needs to be sorted
+func anySorted(a interface{}, b interface{}) bool {
+	av := reflect.ValueOf(a)
+	bv := reflect.ValueOf(b)
+
+	for i := 0; i < av.Len(); i++ {
+		el := av.Index(i).Interface()
+		idx := sort.Search(bv.Len(), func(i int) bool {
+			return bv.Index(i).Interface() == el
+		})
+		if idx < bv.Len() && bv.Index(idx).Interface() == el {
+			return true
+		}
+	}
+
+	return false
+}
+
+func contains(a interface{}, e interface{}) bool {
+	v := reflect.ValueOf(a)
+
+	for i := 0; i < v.Len(); i++ {
+		if v.Index(i).Interface() == e {
+			return true
+		}
+	}
+	return false
 }
