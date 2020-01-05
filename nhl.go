@@ -12,12 +12,21 @@ import (
 	"time"
 )
 
-const Author = "Steven Black (https://github.com/StevenBlack/nhl)"
-const AppVersion = "Version 0.1.3 (Jan 1 2019)"
-const Description = "NHL plaintext standings and stats"
+const author = "Steven Black (https://github.com/StevenBlack/nhl)"
+const appVersion = "Version 0.1.3 (Jan 1 2019)"
+const description = "NHL plaintext standings and stats"
+
+type teams []struct {
+	ID           int      `json:"id"`
+	Abbreviation string   `json:"abbreviation"`
+	City         string   `json:"city"`
+	Alias        string   `json:"alias"`
+	Selected     bool     `json:"selected"`
+	Aliases      []string `json:"aliases"`
+}
 
 type (
-	Stats struct {
+	statistics struct {
 		Copyright string `json:"copyright"`
 		Records   []struct {
 			StandingsType string `json:"standingsType"`
@@ -206,17 +215,17 @@ func main() {
 	}
 
 	if *version {
-		fmt.Println(AppVersion)
+		fmt.Println(appVersion)
 		os.Exit(0)
 	}
 
 	if *description {
-		fmt.Println(Description)
+		fmt.Println(description)
 		os.Exit(0)
 	}
 
 	if *author {
-		fmt.Println(Author)
+		fmt.Println(author)
 		os.Exit(0)
 	}
 
@@ -243,7 +252,7 @@ func main() {
 		fmt.Print(err)
 	}
 
-	var stats Stats
+	var stats statistics
 	err = json.Unmarshal(data, &stats)
 	if err != nil {
 		fmt.Println("error:", err)
