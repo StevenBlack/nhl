@@ -11,15 +11,11 @@ import (
 	"sort"
 	"strings"
 	"time"
-
 )
 
 const author = "Steven Black (https://github.com/StevenBlack/nhl)"
 const appVersion = "Version 0.1.3 (Jan 1 2019)"
 const description = "NHL plaintext standings and stats"
-
-var mode = "standings"
-
 
 type teams []struct {
 	ID           int      `json:"id"`
@@ -192,6 +188,8 @@ func (c ByConference) Less(i, j int) bool {
 
 func main() {
 
+	var mode = "standings"
+
 	// Process flags
 	version := flag.Bool("v", false, "prints current version")
 	description := flag.Bool("d", false, "prints a description of this utility")
@@ -239,12 +237,12 @@ func main() {
 
 		// establish settings
 		scoringAliases := [...]string{"assists", "scoring", "goals", "points"}
-		if (anySorted(options, scoringAliases)) {
+		if anySorted(options, scoringAliases) {
 			mode = "scoring"
 		}
 
 		scoresAliases := [...]string{"score", "scores"}
-		if (anySorted(options, scoresAliases)) {
+		if anySorted(options, scoresAliases) {
 			mode = "scores"
 		}
 
