@@ -243,4 +243,8 @@ func main() {
 	if mode == "standings" {
 		standings()
 	}
+
+	if mode == "schedule" {
+		schedule()
+	}
 }

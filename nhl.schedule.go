@@ -1,10 +1,14 @@
 package main
 
 import (
+	"encoding/json"
+	"fmt"
+	"io/ioutil"
+	"net/http"
 	"time"
 )
 
-type schedule struct {
+type gameschedule struct {
 	Copyright    string `json:"copyright"`
 	TotalItems   int    `json:"totalItems"`
 	TotalEvents  int    `json:"totalEvents"`
@@ -72,4 +76,39 @@ type schedule struct {
 		Events  []interface{} `json:"events"`
 		Matches []interface{} `json:"matches"`
 	} `json:"dates"`
+}
+
+func schedule() {
+	url := urls["schedule"]
+
+	client := http.Client{
+		Timeout: time.Second * 2, // Maximum of 2 secs
+	}
+
+	req, err := http.NewRequest(http.MethodGet, url, nil)
+	if err != nil {
+		fmt.Print(err)
+	}
+
+	req.Header.Set("User-Agent", "nhl-stats-api")
+
+	res, getErr := client.Do(req)
+	if getErr != nil {
+		fmt.Print(getErr)
+	}
+
+	data, err := ioutil.ReadAll(res.Body)
+	if err != nil {
+		fmt.Print(err)
+	}
+
+	var sched gameschedule
+	err = json.Unmarshal(data, &sched)
+	if err != nil {
+		fmt.Println("error:", err)
+	}
+
+	// create and load schedule
+	fmt.Println(sched)
+
 }
