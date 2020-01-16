@@ -14,7 +14,7 @@ import (
 )
 
 const author = "Steven Black (https://github.com/StevenBlack/nhl)"
-const appVersion = "Version 0.1.3 (Jan 1 2019)"
+const appVersion = "Version 0.1.3 (Jan 15 2019)"
 const description = "NHL plaintext standings and stats"
 
 type teams []struct {
@@ -210,46 +210,39 @@ func main() {
 		os.Exit(0)
 	}
 
-	// defaults
-	mode = "standings"
-
 	// PROCESS OPTIONS
 	options := os.Args[1:]
+
 	if len(options) > 0 {
 		// lowercase the options
 		for n := range options {
 			options[n] = strings.ToLower(options[n])
 		}
-		// deduplicate the options
-		sort.Strings(options)
-		j := 0
-		for i := 1; i < len(options); i++ {
-			if options[j] == options[i] {
-				continue
-			}
-			j++
-			// preserve the original data
-			// in[i], in[j] = in[j], in[i]
-			// only set what is required
-			options[j] = options[i]
-		}
-		options = options[:j+1]
 
 		// establish settings
 		scoringAliases := [...]string{"assists", "scoring", "goals", "points"}
-		if anySorted(options, scoringAliases) {
+		if any(options, scoringAliases) {
 			mode = "scoring"
 		}
 
-		scoresAliases := [...]string{"score", "scores"}
-		if anySorted(options, scoresAliases) {
-			mode = "scores"
+		if mode == "standings" {
+			scoresAliases := [...]string{"score", "scores"}
+			if any(options, scoresAliases) {
+				mode = "scores"
+			}
 		}
 
-		scheduleAliases := [...]string{"sched", "schedule", "sked"}
-		if any(options, scheduleAliases) {
-			mode = "schedule"
+		if mode == "standings" {
+			scheduleAliases := [...]string{"sched", "schedule", "sked", "games"}
+			if any(options, scheduleAliases) {
+				mode = "schedule"
+			}
 		}
+	}
+
+	fmt.Println(mode)
+	if 1 == 1 {
+		return
 	}
 
 	if mode == "standings" {
@@ -441,24 +434,6 @@ func any(a interface{}, b interface{}) bool {
 	for i := 0; i < av.Len(); i++ {
 		el := av.Index(i).Interface()
 		if contains(b, el) {
-			return true
-		}
-	}
-
-	return false
-}
-
-// anySorted has complexity: O(n * log(n)), a needs to be sorted
-func anySorted(a interface{}, b interface{}) bool {
-	av := reflect.ValueOf(a)
-	bv := reflect.ValueOf(b)
-
-	for i := 0; i < av.Len(); i++ {
-		el := av.Index(i).Interface()
-		idx := sort.Search(bv.Len(), func(i int) bool {
-			return bv.Index(i).Interface() == el
-		})
-		if idx < bv.Len() && bv.Index(idx).Interface() == el {
 			return true
 		}
 	}
