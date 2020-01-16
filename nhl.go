@@ -188,8 +188,6 @@ func (c ByConference) Less(i, j int) bool {
 
 func main() {
 
-	var mode = "standings"
-
 	// Process flags
 	version := flag.Bool("v", false, "prints current version")
 	description := flag.Bool("d", false, "prints a description of this utility")
@@ -210,41 +208,39 @@ func main() {
 		os.Exit(0)
 	}
 
-	// PROCESS OPTIONS
+	// Sanitize options
 	options := os.Args[1:]
-
 	if len(options) > 0 {
 		// lowercase the options
 		for n := range options {
 			options[n] = strings.ToLower(options[n])
 		}
-
-		// establish settings
-		scoringAliases := [...]string{"assists", "scoring", "goals", "points"}
-		if any(options, scoringAliases) {
-			mode = "scoring"
-		}
-
-		if mode == "standings" {
-			scoresAliases := [...]string{"score", "scores"}
-			if any(options, scoresAliases) {
-				mode = "scores"
-			}
-		}
-
-		if mode == "standings" {
-			scheduleAliases := [...]string{"sched", "schedule", "sked", "games"}
-			if any(options, scheduleAliases) {
-				mode = "schedule"
-			}
-		}
 	}
 
-	if mode == "standings" {
+	var mode = reckonMode(options)
+	switch mode {
+	case "standings":
 		standings()
-	}
-
-	if mode == "schedule" {
+	default:
 		schedule()
 	}
+}
+
+func reckonMode(opt []string) string {
+	scoringAliases := [...]string{"assists", "scoring", "goals", "points"}
+	if any(opt, scoringAliases) {
+		return "scoring"
+	}
+
+	scoresAliases := [...]string{"score", "scores"}
+	if any(opt, scoresAliases) {
+		return "scores"
+	}
+
+	scheduleAliases := [...]string{"sched", "schedule", "sked", "games"}
+	if any(opt, scheduleAliases) {
+		return "schedule"
+	}
+
+	return "standings"
 }
