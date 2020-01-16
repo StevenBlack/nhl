@@ -240,11 +240,6 @@ func main() {
 		}
 	}
 
-	fmt.Println(mode)
-	if 1 == 1 {
-		return
-	}
-
 	if mode == "standings" {
 		url := "https://statsapi.web.nhl.com/api/v1/standings?expand=standings.record"
 
