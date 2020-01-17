@@ -87,10 +87,6 @@ type (
 func standings() {
 	url := urls["standings"]
 
-	client := http.Client{
-		Timeout: time.Second * 2, // Maximum of 2 secs
-	}
-
 	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
 		fmt.Print(err)
@@ -118,7 +114,6 @@ func standings() {
 	standings := make([]Team, 0)
 
 	for _, r := range stats.Records {
-		// fmt.Println(r.Conference.Name, r.Division.Name)
 		lnsr := 0
 		for _, tr := range r.TeamRecords {
 			lnsr = lnsr + 1

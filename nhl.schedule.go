@@ -105,10 +105,6 @@ type gameschedule struct {
 func schedule() {
 	url := urls["schedule"]
 
-	client := http.Client{
-		Timeout: time.Second * 2, // Maximum of 2 secs
-	}
-
 	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
 		fmt.Print(err)
@@ -132,7 +128,23 @@ func schedule() {
 		fmt.Println("error:", err)
 	}
 
-	// create and load schedule
-	fmt.Println(sched)
+	for _, r := range sched.Dates {
+		fmt.Println(r.Date)
+		prefix := "  "
+		for _, g := range r.Games {
+			t := g.Teams
+			a := t.Away.Team
+			h := t.Home.Team
+			switch g.Status.DetailedState {
+			case "Final":
+				fmt.Println(prefix, lastWord(a.Name), t.Away.Score, lastWord(h.Name), t.Home.Score)
+			case "In Progress":
+				fmt.Println(prefix, lastWord(a.Name), t.Away.Score, lastWord(h.Name), t.Home.Score)
+			default:
+				fmt.Println(prefix, lastWord(t.Away.Team.Name), "vs", lastWord(t.Home.Team.Name))
+			}
+		}
+	}
+	fmt.Println()
 
 }

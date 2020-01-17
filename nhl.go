@@ -3,8 +3,10 @@ package main
 import (
 	"flag"
 	"fmt"
+	"net/http"
 	"os"
 	"strings"
+	"time"
 )
 
 const author = "Steven Black (https://github.com/StevenBlack/nhl)"
@@ -14,6 +16,10 @@ const description = "NHL plaintext standings and stats"
 var urls = map[string]string{
 	"standings": "https://statsapi.web.nhl.com/api/v1/standings?expand=standings.record",
 	"schedule":  "https://statsapi.web.nhl.com/api/v1/schedule",
+}
+
+var client = http.Client{
+	Timeout: time.Second * 4, // Maximum of 4 secs
 }
 
 func main() {
