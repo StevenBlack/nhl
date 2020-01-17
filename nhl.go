@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"os"
 	"strings"
-	"time"
 )
 
 const author = "Steven Black (https://github.com/StevenBlack/nhl)"
@@ -15,102 +14,6 @@ const description = "NHL plaintext standings and stats"
 var urls = map[string]string{
 	"standings": "https://statsapi.web.nhl.com/api/v1/standings?expand=standings.record",
 	"schedule":  "https://statsapi.web.nhl.com/api/v1/schedule",
-}
-
-type teams []struct {
-	ID           int      `json:"id"`
-	Abbreviation string   `json:"abbreviation"`
-	City         string   `json:"city"`
-	Alias        string   `json:"alias"`
-	Selected     bool     `json:"selected"`
-	Aliases      []string `json:"aliases"`
-}
-
-
-type Team struct {
-	Conference string
-	Division   string
-	Team       string
-	W          int
-	L          int
-	Wl         int
-	W10        int
-	L10        int
-	WL10       int
-	GP         int
-	GD         int
-	WCFlag     int
-}
-
-// sort by wins and losses, last 10 games, league wide
-type By10Wl []Team
-
-func (c By10Wl) Len() int      { return len(c) }
-func (c By10Wl) Swap(i, j int) { c[i], c[j] = c[j], c[i] }
-func (c By10Wl) Less(i, j int) bool {
-	if c[i].WL10 == c[j].WL10 {
-		if c[i].GP == c[j].GP {
-			return c[i].GD > c[j].GD
-		}
-		return c[i].GP < c[j].GP
-
-	}
-	return c[i].WL10 > c[j].WL10
-}
-
-// sort by wins and losses, league wide
-type ByWl []Team
-
-func (c ByWl) Len() int      { return len(c) }
-func (c ByWl) Swap(i, j int) { c[i], c[j] = c[j], c[i] }
-func (c ByWl) Less(i, j int) bool {
-	if c[i].Wl == c[j].Wl {
-		if c[i].GP == c[j].GP {
-			return c[i].GD > c[j].GD
-		}
-		return c[i].GP < c[j].GP
-
-	}
-	return c[i].Wl > c[j].Wl
-}
-
-// sort by division
-type ByDivision []Team
-
-func (c ByDivision) Len() int      { return len(c) }
-func (c ByDivision) Swap(i, j int) { c[i], c[j] = c[j], c[i] }
-func (c ByDivision) Less(i, j int) bool {
-	if c[i].Conference == c[j].Conference {
-		if c[i].Division == c[j].Division {
-			if c[i].Wl == c[j].Wl {
-				if c[i].GP == c[j].GP {
-					return c[i].GD > c[j].GD
-				}
-				return c[i].GP < c[j].GP
-			}
-			return c[i].Wl > c[j].Wl
-		}
-		return c[i].Division < c[j].Division
-	}
-	return c[i].Conference < c[j].Conference
-}
-
-// sort by conference
-type ByConference []Team
-
-func (c ByConference) Len() int      { return len(c) }
-func (c ByConference) Swap(i, j int) { c[i], c[j] = c[j], c[i] }
-func (c ByConference) Less(i, j int) bool {
-	if c[i].Conference == c[j].Conference {
-		if c[i].Wl == c[j].Wl {
-			if c[i].GP == c[j].GP {
-				return c[i].GD > c[j].GD
-			}
-			return c[i].GP < c[j].GP
-		}
-		return c[i].Wl > c[j].Wl
-	}
-	return c[i].Conference < c[j].Conference
 }
 
 func main() {
