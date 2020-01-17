@@ -6,6 +6,8 @@ import (
 	"io/ioutil"
 	"net/http"
 	"time"
+
+	"github.com/nleeper/goment"
 )
 
 type teams []struct {
@@ -129,7 +131,8 @@ func schedule() {
 	}
 
 	for _, r := range sched.Dates {
-		fmt.Println(r.Date)
+		dt, _ := goment.New(r.Date, "YYYY-MM-DD")
+		fmt.Println(dt.Format("dddd MMMM D YYYY"))
 		prefix := "  "
 		for _, g := range r.Games {
 			t := g.Teams
@@ -141,7 +144,7 @@ func schedule() {
 			case "In Progress":
 				fmt.Println(prefix, lastWord(a.Name), t.Away.Score, lastWord(h.Name), t.Home.Score)
 			default:
-				fmt.Println(prefix, lastWord(t.Away.Team.Name), "vs", lastWord(t.Home.Team.Name))
+				fmt.Println(prefix, lastWord(t.Away.Team.Name), "at", lastWord(t.Home.Team.Name))
 			}
 		}
 	}
