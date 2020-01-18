@@ -10,7 +10,7 @@ import (
 )
 
 const author = "Steven Black (https://github.com/StevenBlack/nhl)"
-const appVersion = "Version 0.1.3 (Jan 15 2019)"
+const appVersion = "Version 0.1.4 (Jan 18 2019)"
 const description = "NHL plaintext standings and stats"
 
 var urls = map[string]string{
