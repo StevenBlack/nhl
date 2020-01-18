@@ -23,7 +23,6 @@ var client = http.Client{
 }
 
 func main() {
-
 	// Process flags
 	version := flag.Bool("v", false, "prints current version")
 	description := flag.Bool("d", false, "prints a description of this utility")
