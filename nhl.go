@@ -7,6 +7,8 @@ import (
 	"os"
 	"strings"
 	"time"
+
+	"github.com/thoas/go-funk"
 )
 
 const author = "Steven Black (https://github.com/StevenBlack/nhl)"
@@ -51,6 +53,8 @@ func main() {
 			options[n] = strings.ToLower(options[n])
 		}
 	}
+    // unique options, please
+	options = funk.UniqString(options)
 
 	var mode = reckonMode(options)
 	switch mode {
