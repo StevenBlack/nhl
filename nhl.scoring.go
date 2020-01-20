@@ -6,7 +6,7 @@ import (
 	"net/http"
 )
 
-func scoring() {
+func scoring(teamIds []int) {
 	url := urls["scoring"]
 
 	req, err := http.NewRequest(http.MethodGet, url, nil)

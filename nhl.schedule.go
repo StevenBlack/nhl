@@ -1,26 +1,16 @@
 package main
 
 import (
-	"bytes"
 	"encoding/json"
 	"fmt"
-	"io"
 	"io/ioutil"
 	"net/http"
+	"strconv"
+	"strings"
 	"time"
 
-	"github.com/markbates/pkger"
 	"github.com/nleeper/goment"
 )
-
-type teams []struct {
-	ID           int      `json:"id"`
-	Abbreviation string   `json:"abbreviation"`
-	City         string   `json:"city"`
-	Alias        string   `json:"alias"`
-	Selected     bool     `json:"selected"`
-	Aliases      []string `json:"aliases"`
-}
 
 type Team struct {
 	Conference string
@@ -107,32 +97,25 @@ type gameschedule struct {
 	} `json:"dates"`
 }
 
-func schedule() {
-	buf := bytes.NewBuffer(nil)
-	f, err := pkger.Open("/metadata/teamdata.json")
-	if err != nil {
-		fmt.Print(err)
-		return
-	}
-	io.Copy(buf, f)
-	f.Close()
-
-	var tm teams
-	err = json.Unmarshal(buf.Bytes(), &tm)
-	if err != nil {
-		fmt.Println("error:", err)
-		return
-	}
-
+func schedule(teamIds []int) {
 	url := urls["schedule"]
 
 	// reckon the date range
 	// for now
 	today, _ := goment.New()
 	startDate := today.Subtract(2, "days").Format("YYYY-MM-DD")
-	endDate := today.Add(3, "days").Format("YYYY-MM-DD")
+	endDate := today.Add(14, "days").Format("YYYY-MM-DD")
 
 	url += "?startDate=" + startDate + "&endDate=" + endDate
+
+	if len(teamIds) > 0 {
+		var IDs []string
+		for _, i := range teamIds {
+			IDs = append(IDs, strconv.Itoa(i))
+		}
+
+		url += "&teamId=" + strings.Join(IDs, ",")
+	}
 
 	req, err := http.NewRequest(http.MethodGet, url, nil)
 	if err != nil {
