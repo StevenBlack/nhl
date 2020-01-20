@@ -18,6 +18,7 @@ const description = "NHL plaintext standings and stats"
 var urls = map[string]string{
 	"standings": "https://statsapi.web.nhl.com/api/v1/standings?expand=standings.record",
 	"schedule":  "https://statsapi.web.nhl.com/api/v1/schedule",
+	"scoring":   "https://statsapi.web.nhl.com/api/v1/statTypes",
 }
 
 var client = http.Client{
@@ -53,20 +54,22 @@ func main() {
 			options[n] = strings.ToLower(options[n])
 		}
 	}
-    // unique options, please
+	// unique options, please
 	options = funk.UniqString(options)
 
 	var mode = reckonMode(options)
 	switch mode {
 	case "standings":
 		standings()
+	case "scoring":
+		scoring()
 	default:
 		schedule()
 	}
 }
 
 func reckonMode(opt []string) string {
-	scoringAliases := [...]string{"assists", "scoring", "goals", "points"}
+	scoringAliases := [...]string{"assists", "scoring", "goals", "points", "rookies", "forwards", "f", "defencemen", "defence", "d"}
 	if any(opt, scoringAliases) {
 		return "scoring"
 	}
